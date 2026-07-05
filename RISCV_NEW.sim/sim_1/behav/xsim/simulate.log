@@ -1,0 +1,29 @@
+Time resolution is 1 ps
+T=0 CTRL=0 VLSU=0 start=0 done=0
+T=25000 CTRL=3 VLSU=0 start=0 done=0
+Vector Load Finished
+T=35000 CTRL=0 VLSU=0 start=0 done=1
+T=45000 CTRL=3 VLSU=0 start=0 done=0
+T=55000 CTRL=0 VLSU=0 start=0 done=1
+T=65000 CTRL=3 VLSU=0 start=0 done=0
+T=75000 CTRL=0 VLSU=0 start=0 done=1
+T=85000 CTRL=3 VLSU=0 start=0 done=0
+T=95000 CTRL=0 VLSU=0 start=0 done=1
+T=105000 CTRL=3 VLSU=0 start=0 done=0
+T=115000 CTRL=0 VLSU=0 start=0 done=1
+T=125000 CTRL=3 VLSU=0 start=0 done=0
+$finish called at time : 135 ns : File "D:/RISCV/RISCV_NEW/RISCV_NEW.srcs/sim_1/new/tb.v" Line 77
+T=0 CTRL=0 VLSU=0 start=0 done=0
+T=25000 CTRL=3 VLSU=0 start=0 done=0
+Vector Load Finished
+T=35000 CTRL=0 VLSU=0 start=0 done=1
+T=45000 CTRL=3 VLSU=0 start=0 done=0
+T=55000 CTRL=0 VLSU=0 start=0 done=1
+T=65000 CTRL=3 VLSU=0 start=0 done=0
+T=75000 CTRL=0 VLSU=0 start=0 done=1
+T=85000 CTRL=3 VLSU=0 start=0 done=0
+T=95000 CTRL=0 VLSU=0 start=0 done=1
+T=105000 CTRL=3 VLSU=0 start=0 done=0
+T=115000 CTRL=0 VLSU=0 start=0 done=1
+T=125000 CTRL=3 VLSU=0 start=0 done=0
+$finish called at time : 135 ns : File "D:/RISCV/RISCV_NEW/RISCV_NEW.srcs/sim_1/new/tb.v" Line 77

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_vector_datapath_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_vector_datapath" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="149.501 ns"></ZoomEndTime>
+      <Cursor1Time time="19.500 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="181"></NameColumnWidth>
+      <ValueColumnWidth column_width="187"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="39" />
+   <wvobject fp_name="/tb_vector_datapath/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/instr" type="array">
+      <obj_property name="ElementShortName">instr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/base_addr" type="array">
+      <obj_property name="ElementShortName">base_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">base_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/memRW_mat" type="logic">
+      <obj_property name="ElementShortName">memRW_mat</obj_property>
+      <obj_property name="ObjectShortName">memRW_mat</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/vector_done" type="logic">
+      <obj_property name="ElementShortName">vector_done</obj_property>
+      <obj_property name="ObjectShortName">vector_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/vector_mem_valid" type="logic">
+      <obj_property name="ElementShortName">vector_mem_valid</obj_property>
+      <obj_property name="ObjectShortName">vector_mem_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/vector_mem_write" type="logic">
+      <obj_property name="ElementShortName">vector_mem_write</obj_property>
+      <obj_property name="ObjectShortName">vector_mem_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/vector_mem_addr" type="array">
+      <obj_property name="ElementShortName">vector_mem_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">vector_mem_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/vector_mem_wdata" type="array">
+      <obj_property name="ElementShortName">vector_mem_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">vector_mem_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/vector_mem_ready" type="logic">
+      <obj_property name="ElementShortName">vector_mem_ready</obj_property>
+      <obj_property name="ObjectShortName">vector_mem_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/vector_mem_rdata" type="array">
+      <obj_property name="ElementShortName">vector_mem_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">vector_mem_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/count" type="array">
+      <obj_property name="ElementShortName">count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/controller_dut/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/controller_dut/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/controller_dut/mux_sel" type="logic">
+      <obj_property name="ElementShortName">mux_sel</obj_property>
+      <obj_property name="ObjectShortName">mux_sel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/controller_dut/vec_valid" type="logic">
+      <obj_property name="ElementShortName">vec_valid</obj_property>
+      <obj_property name="ObjectShortName">vec_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/controller_dut/vec_op" type="array">
+      <obj_property name="ElementShortName">vec_op[3:0]</obj_property>
+      <obj_property name="ObjectShortName">vec_op[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/controller_dut/vlsu_done" type="logic">
+      <obj_property name="ElementShortName">vlsu_done</obj_property>
+      <obj_property name="ObjectShortName">vlsu_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/controller_dut/valu_done" type="logic">
+      <obj_property name="ElementShortName">valu_done</obj_property>
+      <obj_property name="ObjectShortName">valu_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/controller_dut/accel_done" type="logic">
+      <obj_property name="ElementShortName">accel_done</obj_property>
+      <obj_property name="ObjectShortName">accel_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/controller_dut/cfg_done" type="logic">
+      <obj_property name="ElementShortName">cfg_done</obj_property>
+      <obj_property name="ObjectShortName">cfg_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/controller_dut/vlsu_start" type="logic">
+      <obj_property name="ElementShortName">vlsu_start</obj_property>
+      <obj_property name="ObjectShortName">vlsu_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/controller_dut/valu_start" type="logic">
+      <obj_property name="ElementShortName">valu_start</obj_property>
+      <obj_property name="ObjectShortName">valu_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/controller_dut/accel_start" type="logic">
+      <obj_property name="ElementShortName">accel_start</obj_property>
+      <obj_property name="ObjectShortName">accel_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/controller_dut/cfg_start" type="logic">
+      <obj_property name="ElementShortName">cfg_start</obj_property>
+      <obj_property name="ObjectShortName">cfg_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/controller_dut/vec_done" type="logic">
+      <obj_property name="ElementShortName">vec_done</obj_property>
+      <obj_property name="ObjectShortName">vec_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/controller_dut/state" type="array">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/controller_dut/OP_NONE" type="array">
+      <obj_property name="ElementShortName">OP_NONE[3:0]</obj_property>
+      <obj_property name="ObjectShortName">OP_NONE[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/controller_dut/OP_CFG" type="array">
+      <obj_property name="ElementShortName">OP_CFG[3:0]</obj_property>
+      <obj_property name="ObjectShortName">OP_CFG[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/controller_dut/OP_LOAD" type="array">
+      <obj_property name="ElementShortName">OP_LOAD[6:0]</obj_property>
+      <obj_property name="ObjectShortName">OP_LOAD[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/controller_dut/OP_STORE" type="array">
+      <obj_property name="ElementShortName">OP_STORE[6:0]</obj_property>
+      <obj_property name="ObjectShortName">OP_STORE[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/controller_dut/OP_VALU" type="array">
+      <obj_property name="ElementShortName">OP_VALU[6:0]</obj_property>
+      <obj_property name="ObjectShortName">OP_VALU[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/controller_dut/OP_ACCEL" type="array">
+      <obj_property name="ElementShortName">OP_ACCEL[6:0]</obj_property>
+      <obj_property name="ObjectShortName">OP_ACCEL[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/controller_dut/IDLE" type="array">
+      <obj_property name="ElementShortName">IDLE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">IDLE[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/controller_dut/WAIT_VLSU" type="array">
+      <obj_property name="ElementShortName">WAIT_VLSU[2:0]</obj_property>
+      <obj_property name="ObjectShortName">WAIT_VLSU[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/controller_dut/WAIT_VALU" type="array">
+      <obj_property name="ElementShortName">WAIT_VALU[2:0]</obj_property>
+      <obj_property name="ObjectShortName">WAIT_VALU[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/controller_dut/WAIT_ACCEL" type="array">
+      <obj_property name="ElementShortName">WAIT_ACCEL[2:0]</obj_property>
+      <obj_property name="ObjectShortName">WAIT_ACCEL[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/controller_dut/WAIT_CFG" type="array">
+      <obj_property name="ElementShortName">WAIT_CFG[2:0]</obj_property>
+      <obj_property name="ObjectShortName">WAIT_CFG[2:0]</obj_property>
+   </wvobject>
+</wave_config>
