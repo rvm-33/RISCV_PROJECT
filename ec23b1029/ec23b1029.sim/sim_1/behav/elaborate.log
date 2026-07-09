@@ -1,0 +1,25 @@
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: /home/Xilinx/SDSoC/2015.4/Vivado/2015.4/bin/unwrapped/lnx64.o/xelab -wto 530871d8df9b4ec782bef9f370d79e38 --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_vector_datapath_behav xil_defaultlib.tb_vector_datapath xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/dct_stage1.v" Line 4. Module dct_stage1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/dct_stage1.v" Line 4. Module dct_stage1 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.vector_decoder
+Compiling module xil_defaultlib.vector_controller
+Compiling module xil_defaultlib.vlsu
+Compiling module xil_defaultlib.MUX2x1_v
+Compiling module xil_defaultlib.vregFile
+Compiling module xil_defaultlib.dct_stage1
+Compiling module xil_defaultlib.dct_stage2
+Compiling module xil_defaultlib.dct_stage3
+Compiling module xil_defaultlib.dct_stage4
+Compiling module xil_defaultlib.accelerator
+Compiling module xil_defaultlib.vector_datapath
+Compiling module xil_defaultlib.tb_vector_datapath
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_vector_datapath_behav

@@ -1,0 +1,954 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412968 on Wed Nov 18 10:19:19 MST 2015
+# Start of session at: Thu Jul  9 15:34:35 2026
+# Process ID: 1825413
+# Current directory: /home/l210/work/ec23b1029/ec23b1029/ec23b1029.runs/synth_1
+# Command line: vivado -log datapath.vds -mode batch -messageDb vivado.pb -notrace -source datapath.tcl
+# Log file: /home/l210/work/ec23b1029/ec23b1029/ec23b1029.runs/synth_1/datapath.vds
+# Journal file: /home/l210/work/ec23b1029/ec23b1029/ec23b1029.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source datapath.tcl -notrace
+Command: synth_design -top datapath -part xc7z010iclg225-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010i'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010i'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1825438 
+WARNING: [Synth 8-2611] redeclaration of ansi port brEQ is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/jump.v:14]
+WARNING: [Synth 8-2611] redeclaration of ansi port brLT is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/jump.v:15]
+WARNING: [Synth 8-2611] redeclaration of ansi port brGE is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/jump.v:16]
+WARNING: [Synth 8-2611] redeclaration of ansi port dataOut is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/immGen.v:27]
+WARNING: [Synth 8-2611] redeclaration of ansi port out is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:10]
+WARNING: [Synth 8-2611] redeclaration of ansi port out is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:28]
+WARNING: [Synth 8-2611] redeclaration of ansi port out is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:48]
+WARNING: [Synth 8-2611] redeclaration of ansi port progCnt is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/progCount.v:29]
+WARNING: [Synth 8-2611] redeclaration of ansi port inst is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:63]
+WARNING: [Synth 8-2611] redeclaration of ansi port brEQ is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:64]
+WARNING: [Synth 8-2611] redeclaration of ansi port brLT is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:65]
+WARNING: [Synth 8-2611] redeclaration of ansi port brGE is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:66]
+WARNING: [Synth 8-2611] redeclaration of ansi port pcUpd_1 is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:76]
+WARNING: [Synth 8-2611] redeclaration of ansi port progCnt_1 is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:77]
+WARNING: [Synth 8-2611] redeclaration of ansi port immData_1 is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:78]
+WARNING: [Synth 8-2611] redeclaration of ansi port regData1_1 is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:79]
+WARNING: [Synth 8-2611] redeclaration of ansi port regData2_1 is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:80]
+WARNING: [Synth 8-2611] redeclaration of ansi port aluIn1_1 is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:81]
+WARNING: [Synth 8-2611] redeclaration of ansi port aluIn2_1 is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:82]
+WARNING: [Synth 8-2611] redeclaration of ansi port aluOut_1 is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:83]
+WARNING: [Synth 8-2611] redeclaration of ansi port datOut_1 is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:84]
+WARNING: [Synth 8-2611] redeclaration of ansi port retOut_1 is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:85]
+WARNING: [Synth 8-2611] redeclaration of ansi port progAdd_1 is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:86]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module add4_v [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/add4_v.v:20]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module alu [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/alu.v:22]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module ctrlLogic [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:21]
+WARNING: [Synth 8-2611] redeclaration of ansi port brEQ is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/jump.v:14]
+WARNING: [Synth 8-2611] redeclaration of ansi port brLT is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/jump.v:15]
+WARNING: [Synth 8-2611] redeclaration of ansi port brGE is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/jump.v:16]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module jump [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/jump.v:2]
+WARNING: [Synth 8-2611] redeclaration of ansi port inst is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:63]
+WARNING: [Synth 8-2611] redeclaration of ansi port brEQ is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:64]
+WARNING: [Synth 8-2611] redeclaration of ansi port brLT is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:65]
+WARNING: [Synth 8-2611] redeclaration of ansi port brGE is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:66]
+WARNING: [Synth 8-2611] redeclaration of ansi port pcUpd_1 is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:76]
+WARNING: [Synth 8-2611] redeclaration of ansi port progCnt_1 is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:77]
+WARNING: [Synth 8-2611] redeclaration of ansi port immData_1 is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:78]
+WARNING: [Synth 8-2611] redeclaration of ansi port regData1_1 is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:79]
+WARNING: [Synth 8-2611] redeclaration of ansi port regData2_1 is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:80]
+WARNING: [Synth 8-2611] redeclaration of ansi port aluIn1_1 is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:81]
+WARNING: [Synth 8-2611] redeclaration of ansi port aluIn2_1 is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:82]
+WARNING: [Synth 8-2611] redeclaration of ansi port aluOut_1 is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:83]
+WARNING: [Synth 8-2611] redeclaration of ansi port datOut_1 is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:84]
+WARNING: [Synth 8-2611] redeclaration of ansi port retOut_1 is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:85]
+WARNING: [Synth 8-2611] redeclaration of ansi port progAdd_1 is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:86]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module datapath [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:18]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module datMemory [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datMemory.v:6]
+WARNING: [Synth 8-2611] redeclaration of ansi port dataOut is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/immGen.v:27]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module immGen [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/immGen.v:18]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module insMemory [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/insMemory.v:3]
+WARNING: [Synth 8-2611] redeclaration of ansi port out is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:10]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module MUX2x1 [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:2]
+WARNING: [Synth 8-2611] redeclaration of ansi port out is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:28]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module MUX2x1_v [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:20]
+WARNING: [Synth 8-2611] redeclaration of ansi port out is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:48]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module MUX4x1 [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:38]
+WARNING: [Synth 8-2611] redeclaration of ansi port progCnt is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/progCount.v:29]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module progCount [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/progCount.v:21]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module regFile [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/regFile.v:25]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module deCode [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/regFile.v:254]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module regSel [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/regFile.v:300]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module vreg_addr_input [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/vreg_addr_input.v:22]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module accelerator [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/vect_mul.v:24]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module vregFile [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/vregfile.v:24]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module fdlogic [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/fdlogic.v:26]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module wblogic [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/wblogic.v:23]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module m21 [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/m2x1.v:2]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module vector_decoder [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/../../new/vector_decoder.v:5]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module vector_controller [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/../../new/vector_controller.v:4]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module config_unit [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/../../new/config_unit.v:3]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module vlsu [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/../../new/vlsu.v:24]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module mem_arbiter [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/../../new/mem_arbiter.v:5]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1180.562 ; gain = 143.043 ; free physical = 550 ; free virtual = 70282
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'datapath' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:18]
+	Parameter BIT_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'MUX2x1' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:2]
+WARNING: [Synth 8-567] referenced signal 'sel' should be on the sensitivity list [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:12]
+WARNING: [Synth 8-567] referenced signal 'inp1' should be on the sensitivity list [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:12]
+WARNING: [Synth 8-567] referenced signal 'inp2' should be on the sensitivity list [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:12]
+INFO: [Synth 8-256] done synthesizing module 'MUX2x1' (1#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:2]
+INFO: [Synth 8-638] synthesizing module 'progCount' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/progCount.v:21]
+INFO: [Synth 8-256] done synthesizing module 'progCount' (2#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/progCount.v:21]
+INFO: [Synth 8-638] synthesizing module 'add4_v' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/add4_v.v:20]
+INFO: [Synth 8-256] done synthesizing module 'add4_v' (3#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/add4_v.v:20]
+INFO: [Synth 8-638] synthesizing module 'insMemory' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/insMemory.v:3]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'C:\Users\rvmri\Downloads\RISC_RVV\CODES\assembler\output.txt'; please make sure the file is added to project and has read permission, ignoring [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/insMemory.v:25]
+INFO: [Synth 8-256] done synthesizing module 'insMemory' (4#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/insMemory.v:3]
+INFO: [Synth 8-638] synthesizing module 'immGen' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/immGen.v:18]
+WARNING: [Synth 8-153] case item 7'b0z10111 will never be executed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/immGen.v:31]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/immGen.v:37]
+INFO: [Synth 8-256] done synthesizing module 'immGen' (5#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/immGen.v:18]
+INFO: [Synth 8-638] synthesizing module 'regFile' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/regFile.v:25]
+INFO: [Synth 8-638] synthesizing module 'deCode' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/regFile.v:254]
+INFO: [Synth 8-256] done synthesizing module 'deCode' (6#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/regFile.v:254]
+INFO: [Synth 8-638] synthesizing module 'regSel' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/regFile.v:300]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/regFile.v:342]
+INFO: [Synth 8-256] done synthesizing module 'regSel' (7#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/regFile.v:300]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/regFile.v:176]
+INFO: [Synth 8-256] done synthesizing module 'regFile' (8#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/regFile.v:25]
+INFO: [Synth 8-638] synthesizing module 'jump' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/jump.v:2]
+INFO: [Synth 8-256] done synthesizing module 'jump' (9#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/jump.v:2]
+INFO: [Synth 8-638] synthesizing module 'alu' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/alu.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/alu.v:106]
+INFO: [Synth 8-256] done synthesizing module 'alu' (10#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/alu.v:22]
+INFO: [Synth 8-638] synthesizing module 'vreg_addr_input' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/vreg_addr_input.v:22]
+WARNING: [Synth 8-567] referenced signal 'sel' should be on the sensitivity list [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/vreg_addr_input.v:39]
+WARNING: [Synth 8-567] referenced signal 'inp1' should be on the sensitivity list [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/vreg_addr_input.v:39]
+WARNING: [Synth 8-567] referenced signal 'inp2' should be on the sensitivity list [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/vreg_addr_input.v:39]
+INFO: [Synth 8-256] done synthesizing module 'vreg_addr_input' (11#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/vreg_addr_input.v:22]
+INFO: [Synth 8-638] synthesizing module 'MUX4x1' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:38]
+WARNING: [Synth 8-567] referenced signal 'sel' should be on the sensitivity list [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:50]
+WARNING: [Synth 8-567] referenced signal 'inp1' should be on the sensitivity list [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:50]
+WARNING: [Synth 8-567] referenced signal 'inp2' should be on the sensitivity list [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:50]
+WARNING: [Synth 8-567] referenced signal 'inp3' should be on the sensitivity list [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:50]
+WARNING: [Synth 8-567] referenced signal 'inp4' should be on the sensitivity list [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:50]
+INFO: [Synth 8-256] done synthesizing module 'MUX4x1' (12#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:38]
+WARNING: [Synth 8-3848] Net datMem_512_in in module/entity datapath does not have driver. [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:40]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (13#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:18]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[63]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[62]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[61]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[60]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[59]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[58]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[57]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[56]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[55]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[54]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[53]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[52]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[51]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[50]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[49]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[48]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[47]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[46]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[45]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[44]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[43]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[42]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[41]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[40]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[39]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[38]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[37]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[36]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[35]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[34]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[33]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[32]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[31]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[29]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[28]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[27]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[26]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[25]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[24]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[23]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[22]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[21]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[20]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[19]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[18]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[17]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[16]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[15]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[14]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[13]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[12]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[11]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[10]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[9]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[8]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[7]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[6]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[5]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[4]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[3]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[2]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[1]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_in[0]
+WARNING: [Synth 8-3331] design datapath has unconnected port sel_mat
+WARNING: [Synth 8-3331] design datapath has unconnected port j[31]
+WARNING: [Synth 8-3331] design datapath has unconnected port j[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port j[29]
+WARNING: [Synth 8-3331] design datapath has unconnected port j[28]
+WARNING: [Synth 8-3331] design datapath has unconnected port j[27]
+WARNING: [Synth 8-3331] design datapath has unconnected port j[26]
+WARNING: [Synth 8-3331] design datapath has unconnected port j[25]
+WARNING: [Synth 8-3331] design datapath has unconnected port j[24]
+WARNING: [Synth 8-3331] design datapath has unconnected port j[23]
+WARNING: [Synth 8-3331] design datapath has unconnected port j[22]
+WARNING: [Synth 8-3331] design datapath has unconnected port j[21]
+WARNING: [Synth 8-3331] design datapath has unconnected port j[20]
+WARNING: [Synth 8-3331] design datapath has unconnected port j[19]
+WARNING: [Synth 8-3331] design datapath has unconnected port j[18]
+WARNING: [Synth 8-3331] design datapath has unconnected port j[17]
+WARNING: [Synth 8-3331] design datapath has unconnected port j[16]
+WARNING: [Synth 8-3331] design datapath has unconnected port j[15]
+WARNING: [Synth 8-3331] design datapath has unconnected port j[14]
+WARNING: [Synth 8-3331] design datapath has unconnected port j[13]
+WARNING: [Synth 8-3331] design datapath has unconnected port j[12]
+WARNING: [Synth 8-3331] design datapath has unconnected port j[11]
+WARNING: [Synth 8-3331] design datapath has unconnected port j[10]
+WARNING: [Synth 8-3331] design datapath has unconnected port j[9]
+WARNING: [Synth 8-3331] design datapath has unconnected port j[8]
+WARNING: [Synth 8-3331] design datapath has unconnected port j[7]
+WARNING: [Synth 8-3331] design datapath has unconnected port j[6]
+WARNING: [Synth 8-3331] design datapath has unconnected port j[5]
+WARNING: [Synth 8-3331] design datapath has unconnected port j[4]
+WARNING: [Synth 8-3331] design datapath has unconnected port j[3]
+WARNING: [Synth 8-3331] design datapath has unconnected port j[2]
+WARNING: [Synth 8-3331] design datapath has unconnected port j[1]
+WARNING: [Synth 8-3331] design datapath has unconnected port j[0]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_out[63]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_out[62]
+WARNING: [Synth 8-3331] design datapath has unconnected port datMem_512_out[61]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1210.812 ; gain = 173.293 ; free physical = 531 ; free virtual = 70252
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1210.812 ; gain = 173.293 ; free physical = 531 ; free virtual = 70252
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010iclg225-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1218.816 ; gain = 181.297 ; free physical = 531 ; free virtual = 70252
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010iclg225-1L
+INFO: [Synth 8-5544] ROM "progCnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "currProg" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "outIns" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "insMem" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "dataOut" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg01" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg02" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg03" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg04" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg05" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg06" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg07" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg08" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg09" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg10" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg11" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg12" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg13" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg14" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg15" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg16" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg17" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg18" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg19" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg20" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg21" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg22" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg23" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg24" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg25" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg26" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg27" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg28" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg29" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg30" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg31" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "aluOut" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'out1_reg' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/vreg_addr_input.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'out2_reg' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/vreg_addr_input.v:42]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1250.918 ; gain = 213.398 ; free physical = 499 ; free virtual = 70220
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 35    
+	                1 Bit    Registers := 5     
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	 257 Input     32 Bit        Muxes := 1     
+	   7 Input     32 Bit        Muxes := 1     
+	  32 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 43    
+	  33 Input      1 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module datapath 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module MUX2x1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module progCount 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module add4_v 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module insMemory 
+Detailed RTL Component Info : 
++---Muxes : 
+	 257 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module immGen 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   7 Input     32 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+Module deCode 
+Detailed RTL Component Info : 
++---Muxes : 
+	  32 Input     32 Bit        Muxes := 1     
+Module regSel 
+Detailed RTL Component Info : 
++---Muxes : 
+	  33 Input      1 Bit        Muxes := 1     
+Module regFile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 31    
+Module jump 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 8     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---Muxes : 
+	  12 Input      1 Bit        Muxes := 1     
+Module MUX4x1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1309.926 ; gain = 272.406 ; free physical = 446 ; free virtual = 70166
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "regSel_dut_1/dataOut" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regSel_dut_2/dataOut" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg01" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg02" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg03" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg04" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg05" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg06" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg07" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg08" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg09" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg10" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg11" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg12" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg13" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg14" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg15" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg16" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg17" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg18" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg19" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg20" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg21" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg22" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg23" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg24" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg25" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg26" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg27" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg28" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg29" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg30" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg31" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg01" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg02" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg03" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg04" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg05" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg06" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg07" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg08" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg09" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg10" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg11" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg12" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg13" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg14" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg15" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg16" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg17" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg18" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg19" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg20" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg21" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg22" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg23" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg24" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg25" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg26" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg27" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg28" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg29" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg30" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg31" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regSel_dut_1/dataOut" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regSel_dut_2/dataOut" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+DSP Report: Generating DSP alu_dut/aluOut0, operation Mode is: A*B.
+DSP Report: operator alu_dut/aluOut0 is absorbed into DSP alu_dut/aluOut0.
+DSP Report: operator alu_dut/aluOut0 is absorbed into DSP alu_dut/aluOut0.
+DSP Report: Generating DSP alu_dut/aluOut0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator alu_dut/aluOut0 is absorbed into DSP alu_dut/aluOut0.
+DSP Report: operator alu_dut/aluOut0 is absorbed into DSP alu_dut/aluOut0.
+DSP Report: Generating DSP alu_dut/aluOut0, operation Mode is: A*B.
+DSP Report: operator alu_dut/aluOut0 is absorbed into DSP alu_dut/aluOut0.
+DSP Report: operator alu_dut/aluOut0 is absorbed into DSP alu_dut/aluOut0.
+DSP Report: Generating DSP alu_dut/aluOut0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator alu_dut/aluOut0 is absorbed into DSP alu_dut/aluOut0.
+DSP Report: operator alu_dut/aluOut0 is absorbed into DSP alu_dut/aluOut0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1317.926 ; gain = 280.406 ; free physical = 439 ; free virtual = 70159
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1317.926 ; gain = 280.406 ; free physical = 439 ; free virtual = 70159
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP:
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | Neg Edge Clk | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|datapath    | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|datapath    | (PCIN>>17)+A*B | No           | 16     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|datapath    | A*B            | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|datapath    | (PCIN>>17)+A*B | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (regFile_dut/\reg00_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (regFile_dut/\reg00_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (regFile_dut/\reg00_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (regFile_dut/\reg00_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (regFile_dut/\reg00_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (regFile_dut/\reg00_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (regFile_dut/\reg00_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (regFile_dut/\reg00_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (regFile_dut/\reg00_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (regFile_dut/\reg00_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (regFile_dut/\reg00_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (regFile_dut/\reg00_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (regFile_dut/\reg00_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (regFile_dut/\reg00_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (regFile_dut/\reg00_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (regFile_dut/\reg00_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (regFile_dut/\reg00_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (regFile_dut/\reg00_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (regFile_dut/\reg00_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (regFile_dut/\reg00_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (regFile_dut/\reg00_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (regFile_dut/\reg00_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (regFile_dut/\reg00_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (regFile_dut/\reg00_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (regFile_dut/\reg00_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (regFile_dut/\reg00_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (regFile_dut/\reg00_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (regFile_dut/\reg00_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (regFile_dut/\reg00_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (regFile_dut/\reg00_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (regFile_dut/\reg00_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (regFile_dut/\reg00_reg[31] )
+INFO: [Synth 8-3886] merging instance '\immGen_dut/dataOut_reg[20] ' (FDE_1) to '\immGen_dut/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance '\immGen_dut/dataOut_reg[21] ' (FDE_1) to '\immGen_dut/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance '\immGen_dut/dataOut_reg[22] ' (FDE_1) to '\immGen_dut/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance '\immGen_dut/dataOut_reg[23] ' (FDE_1) to '\immGen_dut/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance '\immGen_dut/dataOut_reg[24] ' (FDE_1) to '\immGen_dut/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance '\immGen_dut/dataOut_reg[25] ' (FDE_1) to '\immGen_dut/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance '\immGen_dut/dataOut_reg[26] ' (FDE_1) to '\immGen_dut/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance '\immGen_dut/dataOut_reg[27] ' (FDE_1) to '\immGen_dut/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance '\immGen_dut/dataOut_reg[28] ' (FDE_1) to '\immGen_dut/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance '\immGen_dut/dataOut_reg[29] ' (FDE_1) to '\immGen_dut/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance '\immGen_dut/dataOut_reg[30] ' (FDE_1) to '\immGen_dut/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance '\insMemory_dut/outIns_reg[0] ' (FDE_1) to '\insMemory_dut/outIns_reg[31] '
+INFO: [Synth 8-3886] merging instance '\insMemory_dut/outIns_reg[1] ' (FDE_1) to '\insMemory_dut/outIns_reg[31] '
+INFO: [Synth 8-3886] merging instance '\insMemory_dut/outIns_reg[2] ' (FDE_1) to '\insMemory_dut/outIns_reg[31] '
+INFO: [Synth 8-3886] merging instance '\insMemory_dut/outIns_reg[3] ' (FDE_1) to '\insMemory_dut/outIns_reg[31] '
+INFO: [Synth 8-3886] merging instance '\insMemory_dut/outIns_reg[4] ' (FDE_1) to '\insMemory_dut/outIns_reg[31] '
+INFO: [Synth 8-3886] merging instance '\insMemory_dut/outIns_reg[5] ' (FDE_1) to '\insMemory_dut/outIns_reg[31] '
+INFO: [Synth 8-3886] merging instance '\insMemory_dut/outIns_reg[6] ' (FDE_1) to '\insMemory_dut/outIns_reg[31] '
+INFO: [Synth 8-3886] merging instance '\insMemory_dut/outIns_reg[7] ' (FDE_1) to '\insMemory_dut/outIns_reg[31] '
+INFO: [Synth 8-3886] merging instance '\insMemory_dut/outIns_reg[8] ' (FDE_1) to '\insMemory_dut/outIns_reg[31] '
+INFO: [Synth 8-3886] merging instance '\insMemory_dut/outIns_reg[9] ' (FDE_1) to '\insMemory_dut/outIns_reg[31] '
+INFO: [Synth 8-3886] merging instance '\insMemory_dut/outIns_reg[10] ' (FDE_1) to '\insMemory_dut/outIns_reg[31] '
+INFO: [Synth 8-3886] merging instance '\insMemory_dut/outIns_reg[11] ' (FDE_1) to '\insMemory_dut/outIns_reg[31] '
+INFO: [Synth 8-3886] merging instance '\insMemory_dut/outIns_reg[12] ' (FDE_1) to '\insMemory_dut/outIns_reg[31] '
+INFO: [Synth 8-3886] merging instance '\insMemory_dut/outIns_reg[13] ' (FDE_1) to '\insMemory_dut/outIns_reg[31] '
+INFO: [Synth 8-3886] merging instance '\insMemory_dut/outIns_reg[14] ' (FDE_1) to '\insMemory_dut/outIns_reg[31] '
+INFO: [Synth 8-3886] merging instance '\insMemory_dut/outIns_reg[15] ' (FDE_1) to '\insMemory_dut/outIns_reg[31] '
+INFO: [Synth 8-3886] merging instance '\insMemory_dut/outIns_reg[16] ' (FDE_1) to '\insMemory_dut/outIns_reg[31] '
+INFO: [Synth 8-3886] merging instance '\insMemory_dut/outIns_reg[17] ' (FDE_1) to '\insMemory_dut/outIns_reg[31] '
+INFO: [Synth 8-3886] merging instance '\insMemory_dut/outIns_reg[18] ' (FDE_1) to '\insMemory_dut/outIns_reg[31] '
+INFO: [Synth 8-3886] merging instance '\insMemory_dut/outIns_reg[19] ' (FDE_1) to '\insMemory_dut/outIns_reg[31] '
+INFO: [Synth 8-3886] merging instance '\insMemory_dut/outIns_reg[20] ' (FDE_1) to '\insMemory_dut/outIns_reg[31] '
+INFO: [Synth 8-3886] merging instance '\insMemory_dut/outIns_reg[21] ' (FDE_1) to '\insMemory_dut/outIns_reg[31] '
+INFO: [Synth 8-3886] merging instance '\insMemory_dut/outIns_reg[22] ' (FDE_1) to '\insMemory_dut/outIns_reg[31] '
+INFO: [Synth 8-3886] merging instance '\insMemory_dut/outIns_reg[23] ' (FDE_1) to '\insMemory_dut/outIns_reg[31] '
+INFO: [Synth 8-3886] merging instance '\insMemory_dut/outIns_reg[24] ' (FDE_1) to '\insMemory_dut/outIns_reg[31] '
+INFO: [Synth 8-3886] merging instance '\insMemory_dut/outIns_reg[25] ' (FDE_1) to '\insMemory_dut/outIns_reg[31] '
+INFO: [Synth 8-3886] merging instance '\insMemory_dut/outIns_reg[26] ' (FDE_1) to '\insMemory_dut/outIns_reg[31] '
+INFO: [Synth 8-3886] merging instance '\insMemory_dut/outIns_reg[27] ' (FDE_1) to '\insMemory_dut/outIns_reg[31] '
+INFO: [Synth 8-3886] merging instance '\insMemory_dut/outIns_reg[28] ' (FDE_1) to '\insMemory_dut/outIns_reg[31] '
+INFO: [Synth 8-3886] merging instance '\insMemory_dut/outIns_reg[29] ' (FDE_1) to '\insMemory_dut/outIns_reg[31] '
+INFO: [Synth 8-3886] merging instance '\insMemory_dut/outIns_reg[30] ' (FDE_1) to '\insMemory_dut/outIns_reg[31] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\insMemory_dut/outIns_reg[31] )
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\reg02_reg[0] ' (FDSE) to 'regFile_dut/\reg08_reg[0] '
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\reg04_reg[0] ' (FDSE) to 'regFile_dut/\reg08_reg[0] '
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\reg06_reg[0] ' (FDSE) to 'regFile_dut/\reg08_reg[0] '
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\reg07_reg[0] ' (FDSE) to 'regFile_dut/\reg08_reg[0] '
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\reg08_reg[0] ' (FDSE) to 'regFile_dut/\reg09_reg[0] '
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (regFile_dut/\reg09_reg[0] )
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\reg03_reg[1] ' (FDSE) to 'regFile_dut/\reg12_reg[1] '
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\reg04_reg[1] ' (FDSE) to 'regFile_dut/\reg12_reg[1] '
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\reg06_reg[1] ' (FDSE) to 'regFile_dut/\reg12_reg[1] '
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\reg08_reg[1] ' (FDSE) to 'regFile_dut/\reg12_reg[1] '
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\reg09_reg[1] ' (FDSE) to 'regFile_dut/\reg12_reg[1] '
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (regFile_dut/\reg12_reg[1] )
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\reg01_reg[2] ' (FDSE) to 'regFile_dut/\reg08_reg[2] '
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\reg05_reg[2] ' (FDSE) to 'regFile_dut/\reg08_reg[2] '
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\reg07_reg[2] ' (FDSE) to 'regFile_dut/\reg08_reg[2] '
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (regFile_dut/\reg08_reg[2] )
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\reg09_reg[3] ' (FDSE) to 'regFile_dut/\reg12_reg[3] '
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (regFile_dut/\reg12_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (regFile_dut/\reg10_reg[10] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (regFile_dut/\reg11_reg[11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (regFile_dut/\reg13_reg[13] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (regFile_dut/\reg14_reg[14] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (regFile_dut/\reg15_reg[15] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (regFile_dut/\reg16_reg[16] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (regFile_dut/\reg17_reg[17] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (regFile_dut/\reg18_reg[18] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (regFile_dut/\reg19_reg[19] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (regFile_dut/\reg20_reg[20] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (regFile_dut/\reg21_reg[21] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (regFile_dut/\reg22_reg[22] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (regFile_dut/\reg23_reg[23] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (regFile_dut/\reg24_reg[24] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (regFile_dut/\reg25_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (regFile_dut/\reg26_reg[26] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (regFile_dut/\reg27_reg[27] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (regFile_dut/\reg28_reg[28] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (regFile_dut/\reg29_reg[29] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (regFile_dut/\reg30_reg[30] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (regFile_dut/\reg31_reg[31] )
+INFO: [Synth 8-3886] merging instance '\immGen_dut/dataOut_reg[0] ' (FDE_1) to '\immGen_dut/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance '\immGen_dut/dataOut_reg[1] ' (FDE_1) to '\immGen_dut/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance '\immGen_dut/dataOut_reg[2] ' (FDE_1) to '\immGen_dut/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance '\immGen_dut/dataOut_reg[3] ' (FDE_1) to '\immGen_dut/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance '\immGen_dut/dataOut_reg[4] ' (FDE_1) to '\immGen_dut/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance '\immGen_dut/dataOut_reg[5] ' (FDE_1) to '\immGen_dut/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance '\immGen_dut/dataOut_reg[6] ' (FDE_1) to '\immGen_dut/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance '\immGen_dut/dataOut_reg[7] ' (FDE_1) to '\immGen_dut/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance '\immGen_dut/dataOut_reg[8] ' (FDE_1) to '\immGen_dut/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance '\immGen_dut/dataOut_reg[9] ' (FDE_1) to '\immGen_dut/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance '\immGen_dut/dataOut_reg[10] ' (FDE_1) to '\immGen_dut/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance '\immGen_dut/dataOut_reg[11] ' (FDE_1) to '\immGen_dut/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance '\immGen_dut/dataOut_reg[12] ' (FDE_1) to '\immGen_dut/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance '\immGen_dut/dataOut_reg[13] ' (FDE_1) to '\immGen_dut/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance '\immGen_dut/dataOut_reg[14] ' (FDE_1) to '\immGen_dut/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance '\immGen_dut/dataOut_reg[15] ' (FDE_1) to '\immGen_dut/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance '\immGen_dut/dataOut_reg[16] ' (FDE_1) to '\immGen_dut/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance '\immGen_dut/dataOut_reg[17] ' (FDE_1) to '\immGen_dut/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance '\immGen_dut/dataOut_reg[18] ' (FDE_1) to '\immGen_dut/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance '\immGen_dut/dataOut_reg[19] ' (FDE_1) to '\immGen_dut/dataOut_reg[31] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\immGen_dut/dataOut_reg[31] )
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\regSel_dut_2/dataOut_reg[0] ' (FDE_1) to 'regFile_dut/\regSel_dut_2/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\regSel_dut_2/dataOut_reg[1] ' (FDE_1) to 'regFile_dut/\regSel_dut_2/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\regSel_dut_2/dataOut_reg[2] ' (FDE_1) to 'regFile_dut/\regSel_dut_2/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\regSel_dut_2/dataOut_reg[3] ' (FDE_1) to 'regFile_dut/\regSel_dut_2/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\regSel_dut_2/dataOut_reg[4] ' (FDE_1) to 'regFile_dut/\regSel_dut_2/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\regSel_dut_2/dataOut_reg[5] ' (FDE_1) to 'regFile_dut/\regSel_dut_2/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\regSel_dut_2/dataOut_reg[6] ' (FDE_1) to 'regFile_dut/\regSel_dut_2/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\regSel_dut_2/dataOut_reg[7] ' (FDE_1) to 'regFile_dut/\regSel_dut_2/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\regSel_dut_2/dataOut_reg[8] ' (FDE_1) to 'regFile_dut/\regSel_dut_2/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\regSel_dut_2/dataOut_reg[9] ' (FDE_1) to 'regFile_dut/\regSel_dut_2/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\regSel_dut_2/dataOut_reg[10] ' (FDE_1) to 'regFile_dut/\regSel_dut_2/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\regSel_dut_2/dataOut_reg[11] ' (FDE_1) to 'regFile_dut/\regSel_dut_2/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\regSel_dut_2/dataOut_reg[12] ' (FDE_1) to 'regFile_dut/\regSel_dut_2/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\regSel_dut_2/dataOut_reg[13] ' (FDE_1) to 'regFile_dut/\regSel_dut_2/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\regSel_dut_2/dataOut_reg[14] ' (FDE_1) to 'regFile_dut/\regSel_dut_2/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\regSel_dut_2/dataOut_reg[15] ' (FDE_1) to 'regFile_dut/\regSel_dut_2/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\regSel_dut_2/dataOut_reg[16] ' (FDE_1) to 'regFile_dut/\regSel_dut_2/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\regSel_dut_2/dataOut_reg[17] ' (FDE_1) to 'regFile_dut/\regSel_dut_2/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\regSel_dut_2/dataOut_reg[18] ' (FDE_1) to 'regFile_dut/\regSel_dut_2/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\regSel_dut_2/dataOut_reg[19] ' (FDE_1) to 'regFile_dut/\regSel_dut_2/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\regSel_dut_2/dataOut_reg[20] ' (FDE_1) to 'regFile_dut/\regSel_dut_2/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\regSel_dut_2/dataOut_reg[21] ' (FDE_1) to 'regFile_dut/\regSel_dut_2/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\regSel_dut_2/dataOut_reg[22] ' (FDE_1) to 'regFile_dut/\regSel_dut_2/dataOut_reg[31] '
+INFO: [Synth 8-3886] merging instance 'regFile_dut/\regSel_dut_2/dataOut_reg[23] ' (FDE_1) to 'regFile_dut/\regSel_dut_2/dataOut_reg[31] '
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (regFile_dut/\regSel_dut_1/dataOut_reg[31] )
+WARNING: [Synth 8-3332] Sequential element (\insMemory_dut/outIns_reg[31] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\insMemory_dut/outIns_reg[30] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\insMemory_dut/outIns_reg[29] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\insMemory_dut/outIns_reg[28] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\insMemory_dut/outIns_reg[27] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\insMemory_dut/outIns_reg[26] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\insMemory_dut/outIns_reg[25] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\insMemory_dut/outIns_reg[24] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\insMemory_dut/outIns_reg[23] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\insMemory_dut/outIns_reg[22] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\insMemory_dut/outIns_reg[21] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\insMemory_dut/outIns_reg[20] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\insMemory_dut/outIns_reg[19] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\insMemory_dut/outIns_reg[18] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\insMemory_dut/outIns_reg[17] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\insMemory_dut/outIns_reg[16] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\insMemory_dut/outIns_reg[15] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\insMemory_dut/outIns_reg[14] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\insMemory_dut/outIns_reg[13] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\insMemory_dut/outIns_reg[12] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\insMemory_dut/outIns_reg[11] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\insMemory_dut/outIns_reg[10] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\insMemory_dut/outIns_reg[9] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\insMemory_dut/outIns_reg[8] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\insMemory_dut/outIns_reg[7] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\insMemory_dut/outIns_reg[6] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\insMemory_dut/outIns_reg[5] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\insMemory_dut/outIns_reg[4] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\insMemory_dut/outIns_reg[3] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\insMemory_dut/outIns_reg[2] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\insMemory_dut/outIns_reg[1] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\insMemory_dut/outIns_reg[0] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\immGen_dut/dataOut_reg[31] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\immGen_dut/dataOut_reg[30] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\immGen_dut/dataOut_reg[29] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\immGen_dut/dataOut_reg[28] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\immGen_dut/dataOut_reg[27] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\immGen_dut/dataOut_reg[26] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\immGen_dut/dataOut_reg[25] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\immGen_dut/dataOut_reg[24] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\immGen_dut/dataOut_reg[23] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\immGen_dut/dataOut_reg[22] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\immGen_dut/dataOut_reg[21] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\immGen_dut/dataOut_reg[20] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\immGen_dut/dataOut_reg[19] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\immGen_dut/dataOut_reg[18] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\immGen_dut/dataOut_reg[17] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\immGen_dut/dataOut_reg[16] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\immGen_dut/dataOut_reg[15] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\immGen_dut/dataOut_reg[14] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\immGen_dut/dataOut_reg[13] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\immGen_dut/dataOut_reg[12] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\immGen_dut/dataOut_reg[11] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\immGen_dut/dataOut_reg[10] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\immGen_dut/dataOut_reg[9] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\immGen_dut/dataOut_reg[8] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\immGen_dut/dataOut_reg[7] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\immGen_dut/dataOut_reg[6] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\immGen_dut/dataOut_reg[5] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\immGen_dut/dataOut_reg[4] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\immGen_dut/dataOut_reg[3] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\immGen_dut/dataOut_reg[2] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\immGen_dut/dataOut_reg[1] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\immGen_dut/dataOut_reg[0] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\regSel_dut_2/dataOut_reg[30] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\regSel_dut_2/dataOut_reg[29] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\regSel_dut_2/dataOut_reg[28] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\regSel_dut_2/dataOut_reg[27] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\regSel_dut_2/dataOut_reg[26] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\regSel_dut_2/dataOut_reg[25] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\regSel_dut_2/dataOut_reg[24] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\regSel_dut_2/dataOut_reg[23] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\regSel_dut_2/dataOut_reg[22] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\regSel_dut_2/dataOut_reg[21] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\regSel_dut_2/dataOut_reg[20] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\regSel_dut_2/dataOut_reg[19] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\regSel_dut_2/dataOut_reg[18] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\regSel_dut_2/dataOut_reg[17] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\regSel_dut_2/dataOut_reg[16] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\regSel_dut_2/dataOut_reg[15] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\regSel_dut_2/dataOut_reg[14] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\regSel_dut_2/dataOut_reg[13] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\regSel_dut_2/dataOut_reg[12] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\regSel_dut_2/dataOut_reg[11] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\regSel_dut_2/dataOut_reg[10] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\regSel_dut_2/dataOut_reg[9] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\regSel_dut_2/dataOut_reg[8] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\regSel_dut_2/dataOut_reg[7] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\regSel_dut_2/dataOut_reg[6] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\regSel_dut_2/dataOut_reg[5] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\regSel_dut_2/dataOut_reg[4] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\regSel_dut_2/dataOut_reg[3] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\regSel_dut_2/dataOut_reg[2] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\regSel_dut_2/dataOut_reg[1] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\regSel_dut_2/dataOut_reg[0] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[31] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[30] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[29] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[28] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[27] ) is unused and will be removed from module regFile.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1337.965 ; gain = 300.445 ; free physical = 417 ; free virtual = 70137
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1337.965 ; gain = 300.445 ; free physical = 417 ; free virtual = 70137
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1337.965 ; gain = 300.445 ; free physical = 417 ; free virtual = 70137
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1345.973 ; gain = 308.453 ; free physical = 409 ; free virtual = 70129
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1345.973 ; gain = 308.453 ; free physical = 409 ; free virtual = 70129
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1345.973 ; gain = 308.453 ; free physical = 409 ; free virtual = 70129
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1345.973 ; gain = 308.453 ; free physical = 409 ; free virtual = 70129
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1345.973 ; gain = 308.453 ; free physical = 409 ; free virtual = 70129
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1345.973 ; gain = 308.453 ; free physical = 409 ; free virtual = 70129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1345.973 ; gain = 308.453 ; free physical = 409 ; free virtual = 70129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1345.973 ; gain = 308.453 ; free physical = 409 ; free virtual = 70129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1345.973 ; gain = 308.453 ; free physical = 409 ; free virtual = 70129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |    20|
+|3     |DSP48E1 |     3|
+|4     |LUT1    |    36|
+|5     |LUT2    |   111|
+|6     |LUT3    |    35|
+|7     |LUT4    |     4|
+|8     |LUT5    |    37|
+|9     |LUT6    |    34|
+|10    |FDCE    |    34|
+|11    |FDPE    |     3|
+|12    |FDRE    |   130|
+|13    |IBUF    |    47|
+|14    |OBUF    |   517|
+|15    |OBUFT   |    64|
++------+--------+------+
+
+Report Instance Areas: 
++------+----------------+----------+------+
+|      |Instance        |Module    |Cells |
++------+----------------+----------+------+
+|1     |top             |          |  1076|
+|2     |  MUX2x1_pc_dut |MUX2x1    |    32|
+|3     |  MUX4x1_dut    |MUX4x1    |    32|
+|4     |  add4_dut      |add4_v    |    34|
+|5     |  alu_dut       |alu       |   101|
+|6     |  jump_dut      |jump      |     4|
+|7     |  progCount_dut |progCount |   201|
++------+----------------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1345.973 ; gain = 308.453 ; free physical = 409 ; free virtual = 70129
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 27 critical warnings and 1636 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1345.973 ; gain = 216.535 ; free physical = 409 ; free virtual = 70129
+Synthesis Optimization Complete : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1345.973 ; gain = 308.453 ; free physical = 409 ; free virtual = 70129
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 70 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 4 inverter(s) to 99 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+305 Infos, 261 Warnings, 27 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+report_utilization: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1489.016 ; gain = 0.000 ; free physical = 351 ; free virtual = 70070
+INFO: [Common 17-206] Exiting Vivado at Thu Jul  9 15:34:42 2026...

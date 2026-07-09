@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_vector_datapath_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_vector_datapath" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="150000001fs"></ZoomEndTime>
+      <Cursor1Time time="104108000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="26" />
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_vector_datapath/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_vector_datapath/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/instr">
+      <obj_property name="ElementShortName">instr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instr[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/base_addr">
+      <obj_property name="ElementShortName">base_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">base_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_vector_datapath/memRW_mat">
+      <obj_property name="ElementShortName">memRW_mat</obj_property>
+      <obj_property name="ObjectShortName">memRW_mat</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_vector_datapath/vector_done">
+      <obj_property name="ElementShortName">vector_done</obj_property>
+      <obj_property name="ObjectShortName">vector_done</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_vector_datapath/vector_mem_valid">
+      <obj_property name="ElementShortName">vector_mem_valid</obj_property>
+      <obj_property name="ObjectShortName">vector_mem_valid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_vector_datapath/vector_mem_write">
+      <obj_property name="ElementShortName">vector_mem_write</obj_property>
+      <obj_property name="ObjectShortName">vector_mem_write</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/vector_mem_addr">
+      <obj_property name="ElementShortName">vector_mem_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">vector_mem_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/vector_mem_wdata">
+      <obj_property name="ElementShortName">vector_mem_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">vector_mem_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_vector_datapath/vector_mem_ready">
+      <obj_property name="ElementShortName">vector_mem_ready</obj_property>
+      <obj_property name="ObjectShortName">vector_mem_ready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/vector_mem_rdata">
+      <obj_property name="ElementShortName">vector_mem_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">vector_mem_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/count">
+      <obj_property name="ElementShortName">count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">count[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_vector_datapath/dut/vrf_dut/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_vector_datapath/dut/vrf_dut/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_vector_datapath/dut/vrf_dut/w_en">
+      <obj_property name="ElementShortName">w_en</obj_property>
+      <obj_property name="ObjectShortName">w_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/w_addr01">
+      <obj_property name="ElementShortName">w_addr01[4:0]</obj_property>
+      <obj_property name="ObjectShortName">w_addr01[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/wdata_512">
+      <obj_property name="ElementShortName">wdata_512[511:0]</obj_property>
+      <obj_property name="ObjectShortName">wdata_512[511:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/rd_addr01">
+      <obj_property name="ElementShortName">rd_addr01[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_addr01[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/rd_addr02">
+      <obj_property name="ElementShortName">rd_addr02[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_addr02[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/rdata_512_01">
+      <obj_property name="ElementShortName">rdata_512_01[511:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata_512_01[511:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/rdata_512_02">
+      <obj_property name="ElementShortName">rdata_512_02[511:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata_512_02[511:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/vector_reg">
+      <obj_property name="ElementShortName">vector_reg[31:0][511:0]</obj_property>
+      <obj_property name="ObjectShortName">vector_reg[31:0][511:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/vector_reg[31]">
+         <obj_property name="ElementShortName">[31][511:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_reg[31][511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/vector_reg[30]">
+         <obj_property name="ElementShortName">[30][511:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_reg[30][511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/vector_reg[29]">
+         <obj_property name="ElementShortName">[29][511:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_reg[29][511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/vector_reg[28]">
+         <obj_property name="ElementShortName">[28][511:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_reg[28][511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/vector_reg[27]">
+         <obj_property name="ElementShortName">[27][511:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_reg[27][511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/vector_reg[26]">
+         <obj_property name="ElementShortName">[26][511:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_reg[26][511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/vector_reg[25]">
+         <obj_property name="ElementShortName">[25][511:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_reg[25][511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/vector_reg[24]">
+         <obj_property name="ElementShortName">[24][511:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_reg[24][511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/vector_reg[23]">
+         <obj_property name="ElementShortName">[23][511:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_reg[23][511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/vector_reg[22]">
+         <obj_property name="ElementShortName">[22][511:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_reg[22][511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/vector_reg[21]">
+         <obj_property name="ElementShortName">[21][511:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_reg[21][511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/vector_reg[20]">
+         <obj_property name="ElementShortName">[20][511:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_reg[20][511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/vector_reg[19]">
+         <obj_property name="ElementShortName">[19][511:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_reg[19][511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/vector_reg[18]">
+         <obj_property name="ElementShortName">[18][511:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_reg[18][511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/vector_reg[17]">
+         <obj_property name="ElementShortName">[17][511:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_reg[17][511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/vector_reg[16]">
+         <obj_property name="ElementShortName">[16][511:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_reg[16][511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/vector_reg[15]">
+         <obj_property name="ElementShortName">[15][511:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_reg[15][511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/vector_reg[14]">
+         <obj_property name="ElementShortName">[14][511:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_reg[14][511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/vector_reg[13]">
+         <obj_property name="ElementShortName">[13][511:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_reg[13][511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/vector_reg[12]">
+         <obj_property name="ElementShortName">[12][511:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_reg[12][511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/vector_reg[11]">
+         <obj_property name="ElementShortName">[11][511:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_reg[11][511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/vector_reg[10]">
+         <obj_property name="ElementShortName">[10][511:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_reg[10][511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/vector_reg[9]">
+         <obj_property name="ElementShortName">[9][511:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_reg[9][511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/vector_reg[8]">
+         <obj_property name="ElementShortName">[8][511:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_reg[8][511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/vector_reg[7]">
+         <obj_property name="ElementShortName">[7][511:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_reg[7][511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/vector_reg[6]">
+         <obj_property name="ElementShortName">[6][511:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_reg[6][511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/vector_reg[5]">
+         <obj_property name="ElementShortName">[5][511:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_reg[5][511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/vector_reg[4]">
+         <obj_property name="ElementShortName">[4][511:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_reg[4][511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/vector_reg[3]">
+         <obj_property name="ElementShortName">[3][511:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_reg[3][511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/vector_reg[2]">
+         <obj_property name="ElementShortName">[2][511:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_reg[2][511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/vector_reg[1]">
+         <obj_property name="ElementShortName">[1][511:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_reg[1][511:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/vector_reg[0]">
+         <obj_property name="ElementShortName">[0][511:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_reg[0][511:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/i">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/VLEN">
+      <obj_property name="ElementShortName">VLEN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">VLEN[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_vector_datapath/dut/vrf_dut/REG_COUNT">
+      <obj_property name="ElementShortName">REG_COUNT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">REG_COUNT[31:0]</obj_property>
+   </wvobject>
+</wave_config>
