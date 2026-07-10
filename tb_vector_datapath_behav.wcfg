@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_vector_datapath_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_vector_datapath" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="135.001 ns"></ZoomEndTime>
+      <Cursor1Time time="8.165 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="181"></NameColumnWidth>
+      <ValueColumnWidth column_width="187"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="35" />
+   <wvobject fp_name="/tb_vector_datapath/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/instr" type="array">
+      <obj_property name="ElementShortName">instr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/base_addr" type="array">
+      <obj_property name="ElementShortName">base_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">base_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/memRW_mat" type="logic">
+      <obj_property name="ElementShortName">memRW_mat</obj_property>
+      <obj_property name="ObjectShortName">memRW_mat</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/vector_done" type="logic">
+      <obj_property name="ElementShortName">vector_done</obj_property>
+      <obj_property name="ObjectShortName">vector_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/vector_mem_valid" type="logic">
+      <obj_property name="ElementShortName">vector_mem_valid</obj_property>
+      <obj_property name="ObjectShortName">vector_mem_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/vector_mem_write" type="logic">
+      <obj_property name="ElementShortName">vector_mem_write</obj_property>
+      <obj_property name="ObjectShortName">vector_mem_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/vector_mem_addr" type="array">
+      <obj_property name="ElementShortName">vector_mem_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">vector_mem_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/vector_mem_wdata" type="array">
+      <obj_property name="ElementShortName">vector_mem_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">vector_mem_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/vector_mem_ready" type="logic">
+      <obj_property name="ElementShortName">vector_mem_ready</obj_property>
+      <obj_property name="ObjectShortName">vector_mem_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/vector_mem_rdata" type="array">
+      <obj_property name="ElementShortName">vector_mem_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">vector_mem_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/count" type="array">
+      <obj_property name="ElementShortName">count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/decoder_dut/instr" type="array">
+      <obj_property name="ElementShortName">instr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/decoder_dut/vec_valid" type="logic">
+      <obj_property name="ElementShortName">vec_valid</obj_property>
+      <obj_property name="ObjectShortName">vec_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/decoder_dut/vec_op" type="array">
+      <obj_property name="ElementShortName">vec_op[3:0]</obj_property>
+      <obj_property name="ObjectShortName">vec_op[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/decoder_dut/vd" type="array">
+      <obj_property name="ElementShortName">vd[4:0]</obj_property>
+      <obj_property name="ObjectShortName">vd[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/decoder_dut/vs1" type="array">
+      <obj_property name="ElementShortName">vs1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">vs1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/decoder_dut/vs2" type="array">
+      <obj_property name="ElementShortName">vs2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">vs2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/decoder_dut/vs3" type="array">
+      <obj_property name="ElementShortName">vs3[4:0]</obj_property>
+      <obj_property name="ObjectShortName">vs3[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/decoder_dut/addr_mode" type="array">
+      <obj_property name="ElementShortName">addr_mode[1:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_mode[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/decoder_dut/width" type="array">
+      <obj_property name="ElementShortName">width[2:0]</obj_property>
+      <obj_property name="ObjectShortName">width[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/decoder_dut/vm" type="logic">
+      <obj_property name="ElementShortName">vm</obj_property>
+      <obj_property name="ObjectShortName">vm</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/decoder_dut/nf" type="array">
+      <obj_property name="ElementShortName">nf[2:0]</obj_property>
+      <obj_property name="ObjectShortName">nf[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/decoder_dut/alu_op" type="array">
+      <obj_property name="ElementShortName">alu_op[5:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_op[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/decoder_dut/VEC_NONE" type="array">
+      <obj_property name="ElementShortName">VEC_NONE[3:0]</obj_property>
+      <obj_property name="ObjectShortName">VEC_NONE[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/decoder_dut/VEC_LOAD" type="array">
+      <obj_property name="ElementShortName">VEC_LOAD[3:0]</obj_property>
+      <obj_property name="ObjectShortName">VEC_LOAD[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/decoder_dut/VEC_STORE" type="array">
+      <obj_property name="ElementShortName">VEC_STORE[3:0]</obj_property>
+      <obj_property name="ObjectShortName">VEC_STORE[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/decoder_dut/VEC_ALU" type="array">
+      <obj_property name="ElementShortName">VEC_ALU[3:0]</obj_property>
+      <obj_property name="ObjectShortName">VEC_ALU[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/decoder_dut/VEC_CFG" type="array">
+      <obj_property name="ElementShortName">VEC_CFG[3:0]</obj_property>
+      <obj_property name="ObjectShortName">VEC_CFG[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/decoder_dut/VEC_CUSTOM" type="array">
+      <obj_property name="ElementShortName">VEC_CUSTOM[3:0]</obj_property>
+      <obj_property name="ObjectShortName">VEC_CUSTOM[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/decoder_dut/OPCODE_VLOAD" type="array">
+      <obj_property name="ElementShortName">OPCODE_VLOAD[6:0]</obj_property>
+      <obj_property name="ObjectShortName">OPCODE_VLOAD[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/decoder_dut/OPCODE_VSTORE" type="array">
+      <obj_property name="ElementShortName">OPCODE_VSTORE[6:0]</obj_property>
+      <obj_property name="ObjectShortName">OPCODE_VSTORE[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/decoder_dut/OPCODE_VALU" type="array">
+      <obj_property name="ElementShortName">OPCODE_VALU[6:0]</obj_property>
+      <obj_property name="ObjectShortName">OPCODE_VALU[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_vector_datapath/dut/decoder_dut/OPCODE_CUSTOM" type="array">
+      <obj_property name="ElementShortName">OPCODE_CUSTOM[6:0]</obj_property>
+      <obj_property name="ObjectShortName">OPCODE_CUSTOM[6:0]</obj_property>
+   </wvobject>
+</wave_config>

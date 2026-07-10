@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v" \
+"../../../../RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/vec_mult.v" \
+"../../../../RISCV_NEW.srcs/sources_1/new/vector_controller.v" \
+"../../../../RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/vector_datapath.v" \
+"../../../../RISCV_NEW.srcs/sources_1/new/vector_decoder.v" \
+"../../../../RISCV_NEW.srcs/sources_1/new/vlsu.v" \
+"../../../../RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/vregfile.v" \
+"../../../../RISCV_NEW.srcs/sim_1/new/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
