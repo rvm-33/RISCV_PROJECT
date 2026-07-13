@@ -38,15 +38,30 @@ assign word_addr = mem_addr >> 2;
 always @(posedge clk)
 begin
 
-    if(rst)
-    begin
 
+if(rst)
+    begin
+    
         mem_ready <= 0;
         mem_rdata <= 0;
-
+    
         for(i=0;i<DEPTH;i=i+1)
-            memory[i] <= 0;
-
+            memory[i] <= 32'd0;
+    
+        //----------------------------------------
+        // DCT Test Vector
+        // [10,20,30,40,50,60,70,80]
+        //----------------------------------------
+    
+        memory[0] <= 32'd10;
+        memory[1] <= 32'd20;
+        memory[2] <= 32'd30;
+        memory[3] <= 32'd40;
+        memory[4] <= 32'd50;
+        memory[5] <= 32'd60;
+        memory[6] <= 32'd70;
+        memory[7] <= 32'd80;
+    
     end
 
     else

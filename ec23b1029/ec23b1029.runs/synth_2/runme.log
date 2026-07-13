@@ -1,0 +1,1059 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+  **** IP Build 1412968 on Wed Nov 18 10:19:19 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7z020clg484-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+WARNING: [Synth 8-2611] redeclaration of ansi port brEQ is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/jump.v:14]
+WARNING: [Synth 8-2611] redeclaration of ansi port brLT is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/jump.v:15]
+WARNING: [Synth 8-2611] redeclaration of ansi port brGE is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/jump.v:16]
+WARNING: [Synth 8-2611] redeclaration of ansi port dataOut is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/immGen.v:27]
+WARNING: [Synth 8-2611] redeclaration of ansi port out is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:10]
+WARNING: [Synth 8-2611] redeclaration of ansi port out is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:28]
+WARNING: [Synth 8-2611] redeclaration of ansi port out is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:48]
+WARNING: [Synth 8-2611] redeclaration of ansi port progCnt is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/progCount.v:29]
+WARNING: [Synth 8-2611] redeclaration of ansi port inst is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:43]
+WARNING: [Synth 8-2611] redeclaration of ansi port brEQ is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:44]
+WARNING: [Synth 8-2611] redeclaration of ansi port brLT is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:45]
+WARNING: [Synth 8-2611] redeclaration of ansi port brGE is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:46]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module add4_v [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/add4_v.v:20]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module alu [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/alu.v:22]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module ctrlLogic [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:21]
+WARNING: [Synth 8-2611] redeclaration of ansi port brEQ is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/jump.v:14]
+WARNING: [Synth 8-2611] redeclaration of ansi port brLT is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/jump.v:15]
+WARNING: [Synth 8-2611] redeclaration of ansi port brGE is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/jump.v:16]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module jump [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/jump.v:2]
+WARNING: [Synth 8-2611] redeclaration of ansi port inst is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:43]
+WARNING: [Synth 8-2611] redeclaration of ansi port brEQ is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:44]
+WARNING: [Synth 8-2611] redeclaration of ansi port brLT is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:45]
+WARNING: [Synth 8-2611] redeclaration of ansi port brGE is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:46]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module datapath [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:18]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module datMemory [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datMemory.v:6]
+WARNING: [Synth 8-2611] redeclaration of ansi port dataOut is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/immGen.v:27]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module immGen [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/immGen.v:18]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module insMemory [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/insMemory.v:3]
+WARNING: [Synth 8-2611] redeclaration of ansi port out is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:10]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module MUX2x1 [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:2]
+WARNING: [Synth 8-2611] redeclaration of ansi port out is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:28]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module MUX2x1_v [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:20]
+WARNING: [Synth 8-2611] redeclaration of ansi port out is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:48]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module MUX4x1 [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:38]
+WARNING: [Synth 8-2611] redeclaration of ansi port progCnt is not allowed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/progCount.v:29]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module progCount [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/progCount.v:21]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module regFile [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/regFile.v:25]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module deCode [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/regFile.v:254]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module regSel [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/regFile.v:300]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module vreg_addr_input [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/vreg_addr_input.v:22]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module vregFile [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/vregfile.v:24]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module fdlogic [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/fdlogic.v:26]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module wblogic [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/wblogic.v:23]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module m21 [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/m2x1.v:2]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module vector_decoder [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/../../new/vector_decoder.v:5]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module vector_controller [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/../../new/vector_controller.v:4]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module config_unit [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/../../new/config_unit.v:3]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module vlsu [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/../../new/vlsu.v:24]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module mem_arbiter [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/../../new/mem_arbiter.v:5]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1181.566 ; gain = 144.043 ; free physical = 441 ; free virtual = 67986
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/top.v:63]
+	Parameter BIT_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'ctrlLogic' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:21]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:152]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:167]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:94]
+WARNING: [Synth 8-151] case item 7'b0000001 is unreachable [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:219]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:219]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:295]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:312]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:320]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:337]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:354]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:371]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:388]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:431]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:446]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:534]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:604]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:641]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:653]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:651]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:677]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:695]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:712]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:720]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:726]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:732]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:738]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:744]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:762]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:760]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:817]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:84]
+INFO: [Synth 8-256] done synthesizing module 'ctrlLogic' (1#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:21]
+INFO: [Synth 8-638] synthesizing module 'datapath' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:18]
+	Parameter BIT_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'MUX2x1' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:2]
+WARNING: [Synth 8-567] referenced signal 'sel' should be on the sensitivity list [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:12]
+WARNING: [Synth 8-567] referenced signal 'inp1' should be on the sensitivity list [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:12]
+WARNING: [Synth 8-567] referenced signal 'inp2' should be on the sensitivity list [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:12]
+INFO: [Synth 8-256] done synthesizing module 'MUX2x1' (2#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:2]
+INFO: [Synth 8-638] synthesizing module 'progCount' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/progCount.v:21]
+INFO: [Synth 8-256] done synthesizing module 'progCount' (3#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/progCount.v:21]
+INFO: [Synth 8-638] synthesizing module 'add4_v' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/add4_v.v:20]
+INFO: [Synth 8-256] done synthesizing module 'add4_v' (4#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/add4_v.v:20]
+INFO: [Synth 8-638] synthesizing module 'insMemory' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/insMemory.v:3]
+INFO: [Synth 8-256] done synthesizing module 'insMemory' (5#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/insMemory.v:3]
+INFO: [Synth 8-638] synthesizing module 'immGen' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/immGen.v:18]
+WARNING: [Synth 8-153] case item 7'b0z10111 will never be executed [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/immGen.v:31]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/immGen.v:37]
+INFO: [Synth 8-256] done synthesizing module 'immGen' (6#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/immGen.v:18]
+INFO: [Synth 8-638] synthesizing module 'regFile' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/regFile.v:25]
+INFO: [Synth 8-638] synthesizing module 'deCode' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/regFile.v:254]
+INFO: [Synth 8-256] done synthesizing module 'deCode' (7#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/regFile.v:254]
+INFO: [Synth 8-638] synthesizing module 'regSel' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/regFile.v:300]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/regFile.v:342]
+INFO: [Synth 8-256] done synthesizing module 'regSel' (8#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/regFile.v:300]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/regFile.v:176]
+INFO: [Synth 8-256] done synthesizing module 'regFile' (9#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/regFile.v:25]
+INFO: [Synth 8-638] synthesizing module 'jump' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/jump.v:2]
+INFO: [Synth 8-256] done synthesizing module 'jump' (10#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/jump.v:2]
+INFO: [Synth 8-638] synthesizing module 'alu' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/alu.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/alu.v:106]
+INFO: [Synth 8-256] done synthesizing module 'alu' (11#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/alu.v:22]
+INFO: [Synth 8-638] synthesizing module 'MUX4x1' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:38]
+WARNING: [Synth 8-567] referenced signal 'sel' should be on the sensitivity list [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:50]
+WARNING: [Synth 8-567] referenced signal 'inp1' should be on the sensitivity list [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:50]
+WARNING: [Synth 8-567] referenced signal 'inp2' should be on the sensitivity list [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:50]
+WARNING: [Synth 8-567] referenced signal 'inp3' should be on the sensitivity list [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:50]
+WARNING: [Synth 8-567] referenced signal 'inp4' should be on the sensitivity list [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:50]
+INFO: [Synth 8-256] done synthesizing module 'MUX4x1' (12#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:38]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (13#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datapath.v:18]
+INFO: [Synth 8-638] synthesizing module 'vector_datapath' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/vector_datapath.v:14]
+	Parameter BIT_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'vector_decoder' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/new/vector_decoder.v:5]
+	Parameter VEC_NONE bound to: 4'b0000 
+	Parameter VEC_LOAD bound to: 4'b0001 
+	Parameter VEC_STORE bound to: 4'b0010 
+	Parameter VEC_ALU bound to: 4'b0011 
+	Parameter VEC_CFG bound to: 4'b0100 
+	Parameter VEC_CUSTOM bound to: 4'b0101 
+	Parameter OPCODE_VLOAD bound to: 7'b0000111 
+	Parameter OPCODE_VSTORE bound to: 7'b0100111 
+	Parameter OPCODE_VALU bound to: 7'b1010111 
+	Parameter OPCODE_CUSTOM bound to: 7'b0000000 
+INFO: [Synth 8-256] done synthesizing module 'vector_decoder' (14#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/new/vector_decoder.v:5]
+INFO: [Synth 8-638] synthesizing module 'vector_controller' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/new/vector_controller.v:4]
+	Parameter OP_NONE bound to: 4'b0000 
+	Parameter OP_LOAD bound to: 4'b0001 
+	Parameter OP_STORE bound to: 4'b0010 
+	Parameter OP_VALU bound to: 4'b0011 
+	Parameter OP_CFG bound to: 4'b0100 
+	Parameter OP_ACCEL bound to: 4'b0101 
+	Parameter IDLE bound to: 3'b000 
+	Parameter WAIT_VLSU bound to: 3'b001 
+	Parameter WAIT_VALU bound to: 3'b010 
+	Parameter WAIT_ACCEL bound to: 3'b011 
+	Parameter WAIT_CFG bound to: 3'b100 
+WARNING: [Synth 8-151] case item 4'b0000 is unreachable [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/new/vector_controller.v:94]
+INFO: [Synth 8-256] done synthesizing module 'vector_controller' (15#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/new/vector_controller.v:4]
+INFO: [Synth 8-638] synthesizing module 'vlsu' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/new/vlsu.v:24]
+	Parameter VLEN bound to: 512 - type: integer 
+	Parameter IDLE bound to: 4'b0000 
+	Parameter LOAD_REQ bound to: 4'b0001 
+	Parameter WAIT_LOAD bound to: 4'b0010 
+	Parameter BUFFER_WORD bound to: 4'b0011 
+	Parameter WRITE_VRF bound to: 4'b0100 
+	Parameter READ_VRF bound to: 4'b0101 
+	Parameter STORE_REQ bound to: 4'b0110 
+	Parameter WAIT_STORE bound to: 4'b0111 
+	Parameter DONE_STATE bound to: 4'b1000 
+WARNING: [Synth 8-151] case item 4'b1000 is unreachable [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/new/vlsu.v:224]
+INFO: [Synth 8-226] default block is never used [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/new/vlsu.v:134]
+WARNING: [Synth 8-151] case item 4'b1000 is unreachable [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/new/vlsu.v:324]
+INFO: [Synth 8-226] default block is never used [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/new/vlsu.v:244]
+WARNING: [Synth 8-3848] Net cmd_ready in module/entity vlsu does not have driver. [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/new/vlsu.v:32]
+WARNING: [Synth 8-3848] Net busy in module/entity vlsu does not have driver. [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/new/vlsu.v:70]
+WARNING: [Synth 8-3848] Net done in module/entity vlsu does not have driver. [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/new/vlsu.v:71]
+INFO: [Synth 8-256] done synthesizing module 'vlsu' (16#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/new/vlsu.v:24]
+INFO: [Synth 8-638] synthesizing module 'MUX2x1_v' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:20]
+WARNING: [Synth 8-567] referenced signal 'sel' should be on the sensitivity list [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:30]
+WARNING: [Synth 8-567] referenced signal 'inp1' should be on the sensitivity list [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:30]
+WARNING: [Synth 8-567] referenced signal 'inp2' should be on the sensitivity list [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:30]
+INFO: [Synth 8-256] done synthesizing module 'MUX2x1_v' (17#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/MUX.v:20]
+INFO: [Synth 8-638] synthesizing module 'vregFile' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/vregfile.v:24]
+	Parameter VLEN bound to: 512 - type: integer 
+	Parameter REG_COUNT bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'vregFile' (18#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/vregfile.v:24]
+INFO: [Synth 8-638] synthesizing module 'accelerator' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/vec_mult.v:24]
+WARNING: [Synth 8-3848] Net ready_in in module/entity accelerator does not have driver. [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/vec_mult.v:33]
+WARNING: [Synth 8-3848] Net valid_out in module/entity accelerator does not have driver. [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/vec_mult.v:37]
+INFO: [Synth 8-256] done synthesizing module 'accelerator' (19#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/vec_mult.v:24]
+INFO: [Synth 8-256] done synthesizing module 'vector_datapath' (20#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/vector_datapath.v:14]
+INFO: [Synth 8-638] synthesizing module 'mem_arbiter' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/new/mem_arbiter.v:5]
+	Parameter VLEN bound to: 512 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'datMemory' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datMemory.v:6]
+	Parameter VLEN bound to: 512 - type: integer 
+	Parameter DEPTH bound to: 1024 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'datMemory' (21#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/datMemory.v:6]
+INFO: [Synth 8-256] done synthesizing module 'mem_arbiter' (22#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/new/mem_arbiter.v:5]
+INFO: [Synth 8-256] done synthesizing module 'top' (23#1) [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/top.v:63]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1313.332 ; gain = 275.809 ; free physical = 306 ; free virtual = 67871
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1313.332 ; gain = 275.809 ; free physical = 302 ; free virtual = 67871
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/l210/work/ec23b1029/RISCV_PROJECT/ec23b1029/ec23b1029.srcs/constrs_1/new/a.xdc]
+Finished Parsing XDC File [/home/l210/work/ec23b1029/RISCV_PROJECT/ec23b1029/ec23b1029.srcs/constrs_1/new/a.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.39 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1768.707 ; gain = 15.000 ; free physical = 164 ; free virtual = 67530
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2340046 
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1768.707 ; gain = 731.184 ; free physical = 186 ; free virtual = 67526
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1768.707 ; gain = 731.184 ; free physical = 186 ; free virtual = 67526
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1768.707 ; gain = 731.184 ; free physical = 186 ; free virtual = 67526
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'vector_issue_reg' into 'scalar_stall_reg' [/home/l210/work/ec23b1029/RISCV_PROJECT/RISCV_NEW.srcs/sources_1/imports/RISC-V Cube/ctrlLogic.v:69]
+INFO: [Synth 8-5546] ROM "immSel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "immSel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "immSel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "PCSel" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "immSel" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "immSel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "immSel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "immSel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regWEn" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "aluSel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "aluSel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "aluSel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "aluSel" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "aluSel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "aluSel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "aluSel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "aluSel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "aluSel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "aluSel" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "aluSel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "aluSel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memRW" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "scalar_stall" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "progCnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "currProg" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "outIns" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "insMem" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "dataOut" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg01" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg02" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg03" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg04" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg05" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg06" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg07" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg08" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg09" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg10" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg11" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg12" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg13" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg14" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg15" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg16" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg17" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg18" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg19" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg20" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg21" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg22" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg23" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg24" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg25" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg26" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg27" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg28" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg29" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg30" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reg31" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "aluOut" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vec_valid" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vec_op" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'vector_controller'
+INFO: [Synth 8-5544] ROM "mux_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "vlsu_start" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "valu_start" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "accel_start" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cfg_start" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "vector_reg_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vector_reg_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vector_reg_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vector_reg_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vector_reg_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vector_reg_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vector_reg_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vector_reg_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vector_reg_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vector_reg_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vector_reg_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vector_reg_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vector_reg_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vector_reg_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vector_reg_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vector_reg_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vector_reg_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vector_reg_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vector_reg_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vector_reg_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vector_reg_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vector_reg_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vector_reg_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vector_reg_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vector_reg_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vector_reg_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vector_reg_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vector_reg_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vector_reg_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vector_reg_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vector_reg_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vector_reg_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "memory_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[16]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[17]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[18]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[19]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[20]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[21]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[22]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[23]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[24]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[25]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[26]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[27]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[28]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[29]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[30]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[31]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[32]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[33]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[34]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[35]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[36]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[37]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[38]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[39]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[40]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[41]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[42]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[43]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[44]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[45]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[46]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[47]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[48]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[49]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[50]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[51]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[52]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[53]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[54]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[55]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[56]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[57]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[58]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[59]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[60]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[61]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[62]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[63]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[64]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[65]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[66]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_reg[67]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+               WAIT_VLSU |                              001 |                              001
+               WAIT_VALU |                              010 |                              010
+              WAIT_ACCEL |                              011 |                              011
+                WAIT_CFG |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'vector_controller'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1768.707 ; gain = 731.184 ; free physical = 156 ; free virtual = 67509
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------+------------+----------+
+|      |RTL Partition        |Replication |Instances |
++------+---------------------+------------+----------+
+|1     |vregFile__GB0        |           1|     23041|
+|2     |vregFile__GB1        |           1|     16385|
+|3     |vregFile__GB2        |           1|      9908|
+|4     |vector_datapath__GC0 |           1|      9420|
+|5     |datMemory__GB0       |           1|     32832|
+|6     |datMemory__GB1       |           1|      8192|
+|7     |datMemory__GB2       |           1|     10240|
+|8     |datMemory__GB3       |           1|     12873|
+|9     |datMemory__GB4       |           1|     19889|
+|10    |datMemory__GB5       |           1|     25445|
+|11    |datMemory__GB6       |           1|     31844|
+|12    |mem_arbiter__GC0     |           1|       230|
+|13    |top__GC0             |           1|     11777|
++------+---------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	              512 Bit    Registers := 34    
+	               32 Bit    Registers := 1064  
+	                5 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 23    
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input    512 Bit        Muxes := 3     
+	   8 Input    512 Bit        Muxes := 2     
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 12    
+	 257 Input     32 Bit        Muxes := 1     
+	   7 Input     32 Bit        Muxes := 1     
+	  32 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   3 Input      5 Bit        Muxes := 3     
+	   4 Input      5 Bit        Muxes := 1     
+	   8 Input      5 Bit        Muxes := 1     
+	   7 Input      5 Bit        Muxes := 1     
+	   9 Input      5 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 7     
+	   5 Input      3 Bit        Muxes := 4     
+	   9 Input      3 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 6     
+	  20 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 91    
+	   5 Input      1 Bit        Muxes := 13    
+	   3 Input      1 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 7     
+	  20 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 2     
+	   9 Input      1 Bit        Muxes := 3     
+	   7 Input      1 Bit        Muxes := 3     
+	  11 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	  33 Input      1 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module vregFile 
+Detailed RTL Component Info : 
++---Registers : 
+	              512 Bit    Registers := 32    
++---Muxes : 
+	   2 Input    512 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 32    
+Module vector_decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   3 Input      5 Bit        Muxes := 3     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 4     
+	   5 Input      2 Bit        Muxes := 6     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module vector_controller 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 12    
+Module vlsu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	              512 Bit    Registers := 2     
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   8 Input    512 Bit        Muxes := 2     
+	   8 Input     32 Bit        Muxes := 1     
+	   8 Input      5 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 7     
+Module MUX2x1_v 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    512 Bit        Muxes := 1     
+Module datMemory 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1025  
+	                1 Bit    Registers := 1     
+Module mem_arbiter 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 2     
+Module ctrlLogic 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   7 Input      5 Bit        Muxes := 1     
+	   9 Input      5 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	  20 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 4     
+	  20 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 3     
+	   9 Input      1 Bit        Muxes := 3     
+	   7 Input      1 Bit        Muxes := 3     
+	  11 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module MUX2x1__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module progCount 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module add4_v 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module insMemory 
+Detailed RTL Component Info : 
++---Muxes : 
+	 257 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module immGen 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   7 Input     32 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+Module deCode__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	  32 Input     32 Bit        Muxes := 1     
+Module deCode__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	  32 Input     32 Bit        Muxes := 1     
+Module deCode 
+Detailed RTL Component Info : 
++---Muxes : 
+	  32 Input     32 Bit        Muxes := 1     
+Module regSel__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	  33 Input      1 Bit        Muxes := 1     
+Module regSel 
+Detailed RTL Component Info : 
++---Muxes : 
+	  33 Input      1 Bit        Muxes := 1     
+Module regFile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 31    
+Module jump 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 8     
+Module MUX2x1__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module MUX2x1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---Muxes : 
+	  12 Input      1 Bit        Muxes := 1     
+Module MUX4x1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module datapath 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 4 processes.
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1768.707 ; gain = 731.184 ; free physical = 155 ; free virtual = 67507
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "vec_valid" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5546] ROM "scalar_stall" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "immSel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "aluSel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "aluSel" is below threshold of ROM address width. It will be mapped to LUTs
+DSP Report: Generating DSP aluOut0, operation Mode is: A*B.
+DSP Report: operator aluOut0 is absorbed into DSP aluOut0.
+DSP Report: operator aluOut0 is absorbed into DSP aluOut0.
+DSP Report: Generating DSP aluOut0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator aluOut0 is absorbed into DSP aluOut0.
+DSP Report: operator aluOut0 is absorbed into DSP aluOut0.
+DSP Report: Generating DSP aluOut0, operation Mode is: A*B.
+DSP Report: operator aluOut0 is absorbed into DSP aluOut0.
+DSP Report: operator aluOut0 is absorbed into DSP aluOut0.
+DSP Report: Generating DSP aluOut0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator aluOut0 is absorbed into DSP aluOut0.
+DSP Report: operator aluOut0 is absorbed into DSP aluOut0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 1768.707 ; gain = 731.184 ; free physical = 309 ; free virtual = 65905
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 1768.707 ; gain = 731.184 ; free physical = 309 ; free virtual = 65905
+
+Report RTL Partitions: 
++------+---------------------+------------+----------+
+|      |RTL Partition        |Replication |Instances |
++------+---------------------+------------+----------+
+|1     |vregFile__GB0        |           1|     23040|
+|2     |vregFile__GB1        |           1|     16384|
+|3     |vregFile__GB2        |           1|      9908|
+|4     |vector_datapath__GC0 |           1|     11287|
+|5     |datMemory__GB0       |           1|     32832|
+|6     |datMemory__GB1       |           1|      8192|
+|7     |datMemory__GB2       |           1|     10240|
+|8     |datMemory__GB3       |           1|     12842|
+|9     |datMemory__GB4       |           1|     10471|
+|10    |datMemory__GB5       |           1|     12079|
+|11    |datMemory__GB6       |           1|     15747|
+|12    |mem_arbiter__GC0     |           1|       326|
+|13    |top__GC0             |           1|     10684|
++------+---------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP:
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | Neg Edge Clk | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|alu         | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | No           | 16     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|alu         | A*B            | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 1768.707 ; gain = 731.184 ; free physical = 208 ; free virtual = 65690
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 1768.707 ; gain = 731.184 ; free physical = 208 ; free virtual = 65690
+
+Report RTL Partitions: 
++------+---------------------+------------+----------+
+|      |RTL Partition        |Replication |Instances |
++------+---------------------+------------+----------+
+|1     |vregFile__GB0        |           1|     23040|
+|2     |vregFile__GB1        |           1|     16384|
+|3     |vregFile__GB2        |           1|      9862|
+|4     |vector_datapath__GC0 |           1|      8320|
+|5     |datMemory__GB0       |           1|     32832|
+|6     |datMemory__GB1       |           1|      8192|
+|7     |datMemory__GB2       |           1|     10240|
+|8     |datMemory__GB3       |           1|     12753|
+|9     |datMemory__GB4       |           1|      2006|
+|10    |datMemory__GB5       |           1|       462|
+|11    |datMemory__GB6       |           1|      1092|
+|12    |mem_arbiter__GC0     |           1|       320|
+|13    |top__GC0             |           1|      8525|
++------+---------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 1821.410 ; gain = 783.887 ; free physical = 168 ; free virtual = 65579
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:39 . Memory (MB): peak = 1956.441 ; gain = 918.918 ; free physical = 153 ; free virtual = 65411
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------+------------+----------+
+|      |RTL Partition        |Replication |Instances |
++------+---------------------+------------+----------+
+|1     |vregFile__GB0        |           1|     23040|
+|2     |vregFile__GB1        |           1|     16384|
+|3     |vregFile__GB2        |           1|      9862|
+|4     |vector_datapath__GC0 |           1|      8320|
+|5     |datMemory__GB0       |           1|     32832|
+|6     |datMemory__GB1       |           1|      8192|
+|7     |datMemory__GB2       |           1|     10240|
+|8     |datMemory__GB3       |           1|     12753|
+|9     |datMemory__GB4       |           1|      2006|
+|10    |datMemory__GB5       |           1|       462|
+|11    |datMemory__GB6       |           1|      1092|
+|12    |mem_arbiter__GC0     |           1|       320|
+|13    |top__GC0             |           1|      8525|
++------+---------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\vrf_rd_addr02_reg[4] ) is unused and will be removed from module vlsu.
+WARNING: [Synth 8-3332] Sequential element (\vrf_rd_addr02_reg[3] ) is unused and will be removed from module vlsu.
+WARNING: [Synth 8-3332] Sequential element (\vrf_rd_addr02_reg[2] ) is unused and will be removed from module vlsu.
+WARNING: [Synth 8-3332] Sequential element (\vrf_rd_addr02_reg[1] ) is unused and will be removed from module vlsu.
+WARNING: [Synth 8-3332] Sequential element (\vrf_rd_addr02_reg[0] ) is unused and will be removed from module vlsu.
+WARNING: [Synth 8-3332] Sequential element (\wbSel_reg[1] ) is unused and will be removed from module ctrlLogic.
+WARNING: [Synth 8-3332] Sequential element (\outIns_reg[31] ) is unused and will be removed from module insMemory.
+WARNING: [Synth 8-3332] Sequential element (\outIns_reg[30] ) is unused and will be removed from module insMemory.
+WARNING: [Synth 8-3332] Sequential element (\outIns_reg[29] ) is unused and will be removed from module insMemory.
+WARNING: [Synth 8-3332] Sequential element (\outIns_reg[28] ) is unused and will be removed from module insMemory.
+WARNING: [Synth 8-3332] Sequential element (\outIns_reg[27] ) is unused and will be removed from module insMemory.
+WARNING: [Synth 8-3332] Sequential element (\outIns_reg[26] ) is unused and will be removed from module insMemory.
+WARNING: [Synth 8-3332] Sequential element (\outIns_reg[25] ) is unused and will be removed from module insMemory.
+WARNING: [Synth 8-3332] Sequential element (\outIns_reg[24] ) is unused and will be removed from module insMemory.
+WARNING: [Synth 8-3332] Sequential element (\outIns_reg[23] ) is unused and will be removed from module insMemory.
+WARNING: [Synth 8-3332] Sequential element (\outIns_reg[22] ) is unused and will be removed from module insMemory.
+WARNING: [Synth 8-3332] Sequential element (\outIns_reg[21] ) is unused and will be removed from module insMemory.
+WARNING: [Synth 8-3332] Sequential element (\outIns_reg[20] ) is unused and will be removed from module insMemory.
+WARNING: [Synth 8-3332] Sequential element (\outIns_reg[19] ) is unused and will be removed from module insMemory.
+WARNING: [Synth 8-3332] Sequential element (\outIns_reg[18] ) is unused and will be removed from module insMemory.
+WARNING: [Synth 8-3332] Sequential element (\outIns_reg[17] ) is unused and will be removed from module insMemory.
+WARNING: [Synth 8-3332] Sequential element (\outIns_reg[16] ) is unused and will be removed from module insMemory.
+WARNING: [Synth 8-3332] Sequential element (\outIns_reg[15] ) is unused and will be removed from module insMemory.
+WARNING: [Synth 8-3332] Sequential element (\outIns_reg[14] ) is unused and will be removed from module insMemory.
+WARNING: [Synth 8-3332] Sequential element (\outIns_reg[13] ) is unused and will be removed from module insMemory.
+WARNING: [Synth 8-3332] Sequential element (\outIns_reg[12] ) is unused and will be removed from module insMemory.
+WARNING: [Synth 8-3332] Sequential element (\outIns_reg[11] ) is unused and will be removed from module insMemory.
+WARNING: [Synth 8-3332] Sequential element (\outIns_reg[10] ) is unused and will be removed from module insMemory.
+WARNING: [Synth 8-3332] Sequential element (\outIns_reg[9] ) is unused and will be removed from module insMemory.
+WARNING: [Synth 8-3332] Sequential element (\outIns_reg[8] ) is unused and will be removed from module insMemory.
+WARNING: [Synth 8-3332] Sequential element (\outIns_reg[7] ) is unused and will be removed from module insMemory.
+WARNING: [Synth 8-3332] Sequential element (\outIns_reg[6] ) is unused and will be removed from module insMemory.
+WARNING: [Synth 8-3332] Sequential element (\outIns_reg[4] ) is unused and will be removed from module insMemory.
+WARNING: [Synth 8-3332] Sequential element (\outIns_reg[3] ) is unused and will be removed from module insMemory.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[31] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[30] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[29] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[28] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[27] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[26] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[25] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[24] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[23] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[22] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[21] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[20] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[19] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[18] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[17] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[16] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[15] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[14] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[13] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[12] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[11] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[10] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[9] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[8] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[7] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[6] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[5] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[4] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[3] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[2] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[1] ) is unused and will be removed from module regFile.
+WARNING: [Synth 8-3332] Sequential element (\reg00_reg[0] ) is unused and will be removed from module regFile.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 2078.051 ; gain = 1040.527 ; free physical = 280 ; free virtual = 65477
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 2078.051 ; gain = 1040.527 ; free physical = 280 ; free virtual = 65477
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 2078.051 ; gain = 1040.527 ; free physical = 280 ; free virtual = 65477
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 2078.051 ; gain = 1040.527 ; free physical = 217 ; free virtual = 65438
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:52 . Memory (MB): peak = 2078.051 ; gain = 1040.527 ; free physical = 215 ; free virtual = 65438
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 2078.051 ; gain = 1040.527 ; free physical = 184 ; free virtual = 65436
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 2078.051 ; gain = 1040.527 ; free physical = 184 ; free virtual = 65436
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 2078.051 ; gain = 1040.527 ; free physical = 177 ; free virtual = 65436
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 2078.051 ; gain = 1040.527 ; free physical = 176 ; free virtual = 65436
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |    62|
+|3     |DSP48E1 |     3|
+|4     |LUT1    |   103|
+|5     |LUT2    |   179|
+|6     |LUT3    |   848|
+|7     |LUT4    |  1420|
+|8     |LUT5    |   998|
+|9     |LUT6    | 20679|
+|10    |MUXF7   |  8451|
+|11    |MUXF8   |  3200|
+|12    |FDCE    |  1236|
+|13    |FDPE    |     3|
+|14    |FDRE    | 34265|
+|15    |FDSE    | 16189|
+|16    |IBUF    |     2|
+|17    |OBUF    |    32|
++------+--------+------+
+
+Report Instance Areas: 
++------+----------------------+------------------+------+
+|      |Instance              |Module            |Cells |
++------+----------------------+------------------+------+
+|1     |top                   |                  | 87671|
+|2     |  vector_datapath_dut |vector_datapath   | 34010|
+|3     |    vrf_dut           |vregFile          | 30752|
+|4     |    decoder_dut       |vector_decoder    |    49|
+|5     |    controller_dut    |vector_controller |    28|
+|6     |    vlsu_dut          |vlsu              |  2666|
+|7     |    mux_dut           |MUX2x1_v          |   512|
+|8     |    accel_dut         |accelerator       |     0|
+|9     |  mem_arbiter_dut     |mem_arbiter       | 50101|
+|10    |    DMEM              |datMemory         | 50101|
+|11    |  ctrlLogic_dut       |ctrlLogic         |   141|
+|12    |  datapath_dut        |datapath          |  3384|
+|13    |    MUX2x1_pc_dut     |MUX2x1__1         |    32|
+|14    |    progCount_dut     |progCount         |    67|
+|15    |    add4_dut          |add4_v            |    73|
+|16    |    insMemory_dut     |insMemory         |     9|
+|17    |    immGen_dut        |immGen            |    86|
+|18    |    regFile_dut       |regFile           |  2309|
+|19    |      regSel_dut_1    |regSel            |   641|
+|20    |      regSel_dut_2    |regSel_0          |   641|
+|21    |    jump_dut          |jump              |    96|
+|22    |    MUX2x1_asel_dut   |MUX2x1__2         |    32|
+|23    |    MUX2x1_bsel_dut   |MUX2x1            |    32|
+|24    |    alu_dut           |alu               |   540|
+|25    |    MUX4x1_dut        |MUX4x1            |    32|
++------+----------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 2078.051 ; gain = 1040.527 ; free physical = 176 ; free virtual = 65436
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 66 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:00:50 . Memory (MB): peak = 2081.965 ; gain = 497.148 ; free physical = 172 ; free virtual = 65436
+Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 2081.965 ; gain = 1044.441 ; free physical = 172 ; free virtual = 65436
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 67 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 8 inverter(s) to 199 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+274 Infos, 111 Warnings, 25 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:36 ; elapsed = 00:00:59 . Memory (MB): peak = 2134.078 ; gain = 1025.223 ; free physical = 1867 ; free virtual = 67202
+report_utilization: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.17 . Memory (MB): peak = 2166.094 ; gain = 0.000 ; free physical = 1802 ; free virtual = 67191
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 13 15:52:28 2026...

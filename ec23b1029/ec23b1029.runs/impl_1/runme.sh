@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/l210/work/ec23b1029/ec23b1029/ec23b1029.runs/impl_1'
+HD_PWD='/home/l210/work/ec23b1029/RISCV_PROJECT/ec23b1029/ec23b1029.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -38,6 +38,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log datapath.vdi -applog -m64 -messageDb vivado.pb -mode batch -source datapath.tcl -notrace
+EAStep vivado -log top.vdi -applog -m64 -messageDb vivado.pb -mode batch -source top.tcl -notrace
 
 

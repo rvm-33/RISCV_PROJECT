@@ -18,7 +18,6 @@ gtkwave, iverilog, vivado, nclaunch
 module datapath#(parameter BIT_WIDTH = 8)(
 	input		clk,
 	input		rst,
-	// input 		external_reset,
 	input		PCSel,
 	input		immSel,
 	input		regWEn,
@@ -32,69 +31,35 @@ module datapath#(parameter BIT_WIDTH = 8)(
 	output		brEQ,
 	output		brLT,
 	output		brGE,
-	output  [31:0] MM_Addr_in,
-	output  [31:0]dest_addr_dcmem,
-	input  sel_mat,
-	input [31:0] j,
-	input stall_vector,
-	output  [BIT_WIDTH*8 - 1:0] datMem_512_in,
-	input [BIT_WIDTH*8 - 1:0] datMem_512_out,
-	input memRW_mat,//what is this not used anywhere
-	input stall_program,
+	input stall_vector,//vector stall
+	
 	output reg scalar_mem_valid,
 	output reg scalar_mem_write,
 	output reg [31:0] scalar_mem_addr,
 	output reg [31:0] scalar_mem_wdata,
-	input [31:0] scalar_mem_rdata,
-	input scalar_mem_ready,//not used anywhere
-	output [31:0] pcUpd_1,
-	output [31:0] progCnt_1,
-	output [31:0] immData_1,
-	output [31:0] regData1_1,
-	output [31:0] regData2_1,
-	output [31:0] aluIn1_1,
-	output [31:0] aluIn2_1,
-	output [31:0] aluOut_1,
-	output [31:0] datOut_1,
-	output [31:0] retOut_1,
-	output [31:0] progAdd_1
+	input [31:0] scalar_mem_rdata
 	);
 
 	wire	[31:0]	inst;
 	wire		brEQ;
 	wire		brLT;
 	wire		brGE;
-
 	reg	[2:0]	stg = 3'b111; //pipeline counter 7->0->1->2->3->4->0
-
-	reg	[31:0]	pcNext;
 	reg	[31:0]	wData;
 	wire atom_reserved;
 	wire [31:0] atom_csr_Address;
-
-
-	wire	[31:0]	pcUpd,pcUpd_1;
-	wire	[31:0]	progCnt,progCnt_1;
-	wire	[31:0]	immData,immData_1;
-	wire	[31:0]	regData1,regData1_1;
-	wire	[31:0]	regData2,regData2_1;
-	wire	[31:0]	aluIn1,aluIn1_1;
-	wire	[31:0]	aluIn2,aluIn2_1;
-	wire	[31:0]	aluOut,aluOut_1;
-	wire	[31:0]	datOut,datOut_1;
-	wire	[31:0]	retOut,retOut_1;
-	wire	[31:0]	progAdd,progAdd_1;
-	assign aluIn1_1 = aluIn1;
-	assign aluIn2_1 = aluIn2;
-	assign progCnt_1 = progCnt;
-	assign immData_1 = immData;
-	assign regData1_1 = regData1;
-	assign regData2_1 = regData2;
-	assign aluOut_1 = aluOut;
-	assign datOut_1 = datOut;
-	assign retOut_1 = retOut;
-	assign progAdd_1 = progAdd;
-	assign pcUpd_1 = pcUpd;
+	wire	[31:0]	pcUpd;
+	wire	[31:0]	progCnt;
+	wire	[31:0]	immData;
+	wire	[31:0]	regData1;
+	wire	[31:0]	regData2;
+	wire	[31:0]	aluIn1;
+	wire	[31:0]	aluIn2;
+	wire	[31:0]	aluOut;
+	wire	[31:0]	datOut;
+	wire	[31:0]	retOut;
+	wire	[31:0]	progAdd;
+	(* DONT_TOUCH = "TRUE" *)
 
 	MUX2x1 MUX2x1_pc_dut(
 	.clk	(clk),
@@ -103,6 +68,7 @@ module datapath#(parameter BIT_WIDTH = 8)(
 	.sel	(PCSel),
 	.out	(pcUpd)
 	);
+	(* DONT_TOUCH = "TRUE" *)
 
 	progCount progCount_dut(
 	.clk(clk),
@@ -111,6 +77,7 @@ module datapath#(parameter BIT_WIDTH = 8)(
 	.pcUpd(pcUpd),
 	.progCnt(progCnt)
 	);
+	(* DONT_TOUCH = "TRUE" *)
 
 	add4_v add4_dut(
 	.clk	(clk),
@@ -120,6 +87,7 @@ module datapath#(parameter BIT_WIDTH = 8)(
 	.addOut	(progAdd),
 	.stall(stall_vector)
 	);
+	(* DONT_TOUCH = "TRUE" *)
 
 	insMemory insMemory_dut(
 	.clk	(clk),
@@ -128,6 +96,7 @@ module datapath#(parameter BIT_WIDTH = 8)(
 	.progCnt(progCnt),
 	.outIns	(inst)
 	);
+	(* DONT_TOUCH = "TRUE" *)
 
 	immGen immGen_dut(
 	.clk	(clk),
@@ -137,6 +106,7 @@ module datapath#(parameter BIT_WIDTH = 8)(
 	.immSel	(immSel),
 	.dataOut(immData)
 	);
+	(* DONT_TOUCH = "TRUE" *)
 
 	regFile regFile_dut(
 	.clk	(clk),
@@ -151,8 +121,7 @@ module datapath#(parameter BIT_WIDTH = 8)(
 	.sData2	(regData2),
 	.stall(stall_vector)
 	);
-
-
+	(* DONT_TOUCH = "TRUE" *)
 
 	jump jump_dut(
 	.clk	(clk),
@@ -165,6 +134,7 @@ module datapath#(parameter BIT_WIDTH = 8)(
 	.brLT	(brLT),
 	.brGE	(brGE)
 	);
+	(* DONT_TOUCH = "TRUE" *)
 
 	MUX2x1 MUX2x1_asel_dut(
 	.clk	(clk),
@@ -173,6 +143,7 @@ module datapath#(parameter BIT_WIDTH = 8)(
 	.sel	(aSel),
 	.out	(aluIn1)
 	);
+	(* DONT_TOUCH = "TRUE" *)
 
 	MUX2x1 MUX2x1_bsel_dut(
 	.clk	(clk),
@@ -181,6 +152,7 @@ module datapath#(parameter BIT_WIDTH = 8)(
 	.sel	(bSel),
 	.out	(aluIn2)
 	);
+	(* DONT_TOUCH = "TRUE" *)
 
 	alu alu_dut(
 	.clk	(clk),
@@ -194,15 +166,7 @@ module datapath#(parameter BIT_WIDTH = 8)(
 
 	assign datOut = scalar_mem_rdata;
 
-	vreg_addr_input vreg_addr_1 (
-	.clk(clk),
-	.inp1(regData1),
-	.inp2(regData2),
-	.out1(MM_Addr_in),
-	.out2(dest_addr_dcmem),
-	.sel(1'b1)
-	);
-
+	(* DONT_TOUCH = "TRUE" *)
 
 	MUX4x1	MUX4x1_dut(
 	.clk	(clk),
@@ -238,11 +202,10 @@ module datapath#(parameter BIT_WIDTH = 8)(
                 scalar_mem_write <= 1'b0;
         
                 // Memory stage only
-                if((stg == 3'd3) && (!stall_vector) && (!stall_program))
+                if((stg == 3'd3) && (!stall_vector))
                 begin
                     scalar_mem_valid <= 1'b1;
                     scalar_mem_addr  <= aluOut;
-        
                     if(memRW)
                     begin
                         // Store
@@ -268,7 +231,7 @@ module datapath#(parameter BIT_WIDTH = 8)(
                 stg <= 3'b111;
             else
             begin
-                if((!stall_vector) && (!stall_program))
+                if((!stall_vector))
                 begin
                     if(stg < 3'd4)
                         stg <= stg + 3'd1;

@@ -21,11 +21,9 @@ module insMemory (
 		for(i = 0; i < 256; i = i + 1)
 		insMem[i] = 32'h00000000;
 
-		// Load program
-		$readmemh("C:\\Users\\rvmri\\Downloads\\RISC_RVV\\CODES\\assembler\\output.txt", insMem);
-
-		//    for(i = 0; i < 16; i = i + 1)
-		//        $display("insMem[%0d] = %h", i, insMem[i]);
+            insMem[0] = 32'h00000007;   // Vector Load
+            insMem[1] = 32'h00000000;   // Custom DCT Accelerator
+            insMem[2] = 32'h00000027;   // Vector Store
 
 	end
 
@@ -35,14 +33,6 @@ module insMemory (
 		if(stg == 3'b000) begin
 
 			outIns <= insMem[progCnt >> 2];
-
-			//        $display(
-			//            "TIME=%0t PC=%0d INDEX=%0d INST=%h",
-			//            $time,
-			//            progCnt,
-			//            progCnt >> 2,
-			//            insMem[progCnt >> 2]
-			//        );
 
 		end
 

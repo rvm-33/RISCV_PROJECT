@@ -9,4 +9,4 @@ then
 exit $RETVAL
 fi
 }
-ExecStep $xv_path/bin/xsim tb_vector_datapath_behav -key {Behavioral:sim_1:Functional:tb_vector_datapath} -tclbatch tb_vector_datapath.tcl -log simulate.log
+ExecStep $xv_path/bin/xsim tb_top_behav -key {Behavioral:sim_1:Functional:tb_top} -tclbatch tb_top.tcl -view /home/l210/work/ec23b1029/RISCV_PROJECT/ec23b1029/dct_test.wcfg -log simulate.log

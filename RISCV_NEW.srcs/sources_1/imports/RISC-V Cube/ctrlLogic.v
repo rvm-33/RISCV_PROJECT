@@ -77,14 +77,15 @@ module ctrlLogic(
             end
             else begin
                 scalar_stall <= 1'b1;
-                vector_issue <= 1'b0;      // one-cycle pulse only
+                vector_issue <= 1'b1;     
             end
         end
 		else begin
 				case(inst[6:0])
+				    7'b0000111,
 				    7'b0100111,
 				    7'b1010111,
-				    7'b0000111:	begin //VECTOR INSTRUCTION
+				    7'b000000:	begin //VECTOR INSTRUCTION
                         vector_issue<=1'b1;
                         vector_instr<=inst;
                         scalar_stall<=1'b1;

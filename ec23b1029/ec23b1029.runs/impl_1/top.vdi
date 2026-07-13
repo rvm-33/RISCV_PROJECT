@@ -1,0 +1,128 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412968 on Wed Nov 18 10:19:19 MST 2015
+# Start of session at: Mon Jul 13 15:18:37 2026
+# Process ID: 2330642
+# Current directory: /home/l210/work/ec23b1029/RISCV_PROJECT/ec23b1029/ec23b1029.runs/impl_1
+# Command line: vivado -log top.vdi -applog -messageDb vivado.pb -mode batch -source top.tcl -notrace
+# Log file: /home/l210/work/ec23b1029/RISCV_PROJECT/ec23b1029/ec23b1029.runs/impl_1/top.vdi
+# Journal file: /home/l210/work/ec23b1029/RISCV_PROJECT/ec23b1029/ec23b1029.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 67 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Device 21-403] Loading part xc7z010iclg225-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010i'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010i'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.18 . Memory (MB): peak = 1555.465 ; gain = 64.031 ; free physical = 4575 ; free virtual = 70482
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: 166d8dbec
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 13d327fdf
+
+Time (s): cpu = 00:00:00.77 ; elapsed = 00:00:00.77 . Memory (MB): peak = 1990.957 ; gain = 0.000 ; free physical = 3482 ; free virtual = 69534
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 3 inverter(s) to 4 load pin(s).
+INFO: [Opt 31-10] Eliminated 2182 cells.
+Phase 2 Constant Propagation | Checksum: fb084607
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1990.957 ; gain = 0.000 ; free physical = 2560 ; free virtual = 68683
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 10952 unconnected nets.
+INFO: [Opt 31-120] Instance datapath_dut/jump_dut (jump) has been optimized to an empty box cell during sweep but it has constraints that prevent its removal. Empty box cells do not impact the implementation flow but they have no functional relevance.
+Resolution: If this is not expected, please check for DONT_TOUCH properties or timing constraint set on the empty box cell or on nets connected to the cell. If found, remove the relevant DONT_TOUCH property or timing constraint and re-run opt_design.
+INFO: [Opt 31-129] Inserted BUFG to drive high-fanout reset|set|enable net. BUFG cell: rst_IBUF_BUFG_inst, Net: rst_IBUF
+INFO: [Opt 31-129] Inserted BUFG to drive high-fanout reset|set|enable net. BUFG cell: rst_IBUF_BUFG_inst, Net: rst_IBUF
+INFO: [Opt 31-11] Eliminated 8996 unconnected cells.
+Phase 3 Sweep | Checksum: 15249c17d
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1990.957 ; gain = 0.000 ; free physical = 2487 ; free virtual = 68682
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1990.957 ; gain = 0.000 ; free physical = 2484 ; free virtual = 68681
+Ending Logic Optimization Task | Checksum: 15249c17d
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1990.957 ; gain = 0.000 ; free physical = 2416 ; free virtual = 68620
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 15249c17d
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1990.957 ; gain = 0.000 ; free physical = 2414 ; free virtual = 68619
+INFO: [Common 17-83] Releasing license: Implementation
+23 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 1990.957 ; gain = 507.527 ; free physical = 2414 ; free virtual = 68619
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/l210/work/ec23b1029/RISCV_PROJECT/ec23b1029/ec23b1029.runs/impl_1/top_drc_opted.rpt.
+INFO: [Vivado_Tcl 4-424] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010i'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010i'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2054.988 ; gain = 0.000 ; free physical = 2262 ; free virtual = 68579
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2054.988 ; gain = 0.000 ; free physical = 2261 ; free virtual = 68579
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 1.1.1 Pre-Place Cells
+Phase 1.1.1 Pre-Place Cells | Checksum: 00000000
+
+Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2054.988 ; gain = 0.000 ; free physical = 2261 ; free virtual = 68579
+ERROR: [Place 30-640] Place Check : This design requires more Register as Flip Flop cells than are available in the target device. This design requires 50709 of such cell types but only 35200 compatible sites are available in the target device. Please analyze your synthesis results and constraints to ensure the design is mapped to Xilinx primitives as expected. If so, please consider targeting a larger device.
+ERROR: [Place 30-640] Place Check : This design requires more Slice Registers cells than are available in the target device. This design requires 50709 of such cell types but only 35200 compatible sites are available in the target device. Please analyze your synthesis results and constraints to ensure the design is mapped to Xilinx primitives as expected. If so, please consider targeting a larger device.
+ERROR: [Place 30-640] Place Check : This design requires more Slice LUTs cells than are available in the target device. This design requires 17763 of such cell types but only 17600 compatible sites are available in the target device. Please analyze your synthesis results and constraints to ensure the design is mapped to Xilinx primitives as expected. If so, please consider targeting a larger device. Please set tcl parameter "drc.disableLUTOverUtilError" to 1 to change this error to warning.
+ERROR: [Place 30-640] Place Check : This design requires more LUT as Logic cells than are available in the target device. This design requires 17763 of such cell types but only 17600 compatible sites are available in the target device. Please analyze your synthesis results and constraints to ensure the design is mapped to Xilinx primitives as expected. If so, please consider targeting a larger device. Please set tcl parameter "drc.disableLUTOverUtilError" to 1 to change this error to warning.
+ERROR: [Place 30-640] Place Check : This design requires more FDCE and FDPE and FDRE and FDSE cells than are available in the target device. This design requires 50709 of such cell types but only 35362 compatible sites are available in the target device. Please analyze your synthesis results and constraints to ensure the design is mapped to Xilinx primitives as expected. If so, please consider targeting a larger device.
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: a024c348
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2070.996 ; gain = 16.008 ; free physical = 2237 ; free virtual = 68577
+Phase 1 Placer Initialization | Checksum: a024c348
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2070.996 ; gain = 16.008 ; free physical = 2237 ; free virtual = 68577
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer stopped due to earlier errors. Implementation Feasibility check failed, Please see the previously displayed individual error or warning messages for more details.'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: a024c348
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2070.996 ; gain = 16.008 ; free physical = 2237 ; free virtual = 68577
+INFO: [Common 17-83] Releasing license: Implementation
+35 Infos, 0 Warnings, 0 Critical Warnings and 7 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 13 15:19:03 2026...

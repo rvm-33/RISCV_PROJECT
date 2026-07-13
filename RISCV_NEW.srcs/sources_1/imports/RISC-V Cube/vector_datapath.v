@@ -14,6 +14,7 @@ single vector datapath block that can be instantiated from the top level.
 module vector_datapath#(parameter BIT_WIDTH = 8)(
     input clk,
     input rst,
+    input vector_valid,
     input [31:0] instr,
     input [31:0] base_addr,
     output wire memRW_mat,
@@ -63,16 +64,19 @@ module vector_datapath#(parameter BIT_WIDTH = 8)(
     wire [31:0] cfg_vl  = 32'd16;
     wire [2:0]  cfg_sew = 3'b010;    // e32
     wire         cfg_vm = 1'b1;
-    assign cfg_done = 1'b1;
-    assign cfg_start=1'b1;
     wire [511:0] accel_out;
-    assign issue_valid =vec_valid;
-    assign memRW_mat = vlsu_mem_write;
-    assign vector_done = vec_done;
-    assign vector_mem_valid = vlsu_mem_valid;
-    assign vector_mem_write = vlsu_mem_write;
-    assign vector_mem_addr = vlsu_mem_addr;
-    assign vector_mem_wdata = vlsu_mem_wdata;
+//    if(vector_valid)begin    
+        assign cfg_done = 1'b1;
+        assign cfg_start=1'b1;
+        assign issue_valid =vec_valid && vector_valid;
+        assign memRW_mat = vlsu_mem_write;
+        assign vector_done = vec_done;
+        assign vector_mem_valid = vlsu_mem_valid;
+        assign vector_mem_write = vlsu_mem_write;
+        assign vector_mem_addr = vlsu_mem_addr;
+        assign vector_mem_wdata = vlsu_mem_wdata;
+
+	(* DONT_TOUCH = "TRUE" *)
 
     vector_decoder decoder_dut(
         .instr(instr),
@@ -88,6 +92,7 @@ module vector_datapath#(parameter BIT_WIDTH = 8)(
         .nf(nf),
         .alu_op(alu_op)
     );
+	(* DONT_TOUCH = "TRUE" *)
 
     vector_controller controller_dut(
         .clk(clk),
@@ -115,6 +120,7 @@ module vector_datapath#(parameter BIT_WIDTH = 8)(
 //        .sew(cfg_sew),
 //        .vm(cfg_vm)
 //    );
+	(* DONT_TOUCH = "TRUE" *)
 
     vlsu #(.VLEN(512)) vlsu_dut(
         .clk(clk),
@@ -147,6 +153,8 @@ module vector_datapath#(parameter BIT_WIDTH = 8)(
         .busy(),//why free
         .done(vlsu_done)
     );
+    (* DONT_TOUCH = "TRUE" *)
+
     MUX2x1_v mux_dut(
     .clk(clk),
     .inp1(vrf_w_data),
@@ -154,7 +162,8 @@ module vector_datapath#(parameter BIT_WIDTH = 8)(
     .sel(mux_sel),
     .out(temp)
     );
-    
+(* DONT_TOUCH = "TRUE" *)
+
     vregFile #(.VLEN(512), .REG_COUNT(32)) vrf_dut(
         .clk(clk),
         .rst(rst),
@@ -166,6 +175,7 @@ module vector_datapath#(parameter BIT_WIDTH = 8)(
         .rdata_512_01(vrf_rdata01),
         .rdata_512_02(vrf_rdata02)
     );
+(* DONT_TOUCH = "TRUE" *)
 
     accelerator accel_dut(
         .clk(clk),
